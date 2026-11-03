@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chi tiết thiết bị – WANDERENT</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <!-- Trang đọc sản phẩm theo URL: product.html?id=LEU01  (tuỳ chọn &mau=LEU01_KAKI) -->
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Trang chủ</a><span aria-hidden="true">/</span>
+      <a href="products.html">Thuê thiết bị</a><span aria-hidden="true">/</span>
+      <a href="products.html" id="bc-cat">Danh mục</a><span aria-hidden="true">/</span>
+      <span aria-current="page" id="bc-name"></span>
+    </nav>
+
+    <div class="pd-layout">
+      <!-- ============ ẢNH ============ -->
+      <section aria-label="Hình ảnh sản phẩm">
+        <div class="gallery-main"><img id="main-img" src="" alt="" referrerpolicy="no-referrer"></div>
+        <div class="gallery-thumbs" id="thumbs"></div>
+      </section>
+
+      <!-- ============ THÔNG TIN + ĐẶT THUÊ ============ -->
+      <section class="pd-info" id="dat-thue" aria-labelledby="pd-name">
+        <span class="card-cat" id="pd-cat"></span>
+        <h1 id="pd-name"></h1>
+        <div class="pd-meta">
+          <span>Mã: <strong id="pd-sku"></strong></span>
+          <span class="badge badge-ok" data-icon="check">Kiểm tra tồn kho theo ngày</span>
+        </div>
+
+        <div class="pd-price-box">
+          <span class="rent-price" id="pd-rent"></span>
+          <span class="value-price">Giá trị sản phẩm: <strong id="pd-value"></strong> · Đặt cọc 30%: <strong id="pd-deposit"></strong></span>
+        </div>
+
+        <fieldset class="color-options" id="color-wrap" style="display:block">
+          <legend class="opt-label">Màu sắc: <span id="color-name"></span></legend>
+          <div class="color-options" id="colors" style="margin:0"></div>
+        </fieldset>
+
+        <span class="opt-label">Thời gian thuê</span>
+        <div class="pd-dates">
+          <div class="date-field">
+            <label for="pd-from">Ngày nhận</label>
+            <input id="pd-from" type="date">
+          </div>
+          <div class="date-field">
+            <label for="pd-to">Ngày trả</label>
+            <input id="pd-to" type="date">
+          </div>
+        </div>
+
+        <div class="pd-row">
+          <span class="opt-label" style="margin:0">Số lượng</span>
+          <div class="qty">
+            <button type="button" id="qty-minus" aria-label="Giảm số lượng">−</button>
+            <label class="sr-only" for="qty">Số lượng</label>
+            <input id="qty" type="number" min="1" max="10" value="1" inputmode="numeric">
+            <button type="button" id="qty-plus" aria-label="Tăng số lượng">+</button>
+          </div>
+        </div>
+
+        <div class="pd-summary" aria-live="polite">
+          <div><span>Số ngày thuê</span><strong id="sum-days"></strong></div>
+          <div><span>Tiền thuê</span><strong id="sum-rent"></strong></div>
+          <div class="total"><span>Tiền cọc cần trả trước (30%)</span><strong id="sum-deposit"></strong></div>
+        </div>
+
+        <div class="pd-cta">
+          <button class="btn btn-outline btn-lg" type="button" id="btn-cart" data-icon="bag">Thêm vào giỏ</button>
+          <button class="btn btn-primary btn-lg" type="button" id="btn-rent" data-icon="calendar">Đặt thuê ngay</button>
+        </div>
+
+        <ul class="pd-perks">
+          <li><span data-icon="refresh"></span><span>Tự động hoàn cọc sau khi trả đồ</span></li>
+          <li><span data-icon="shield"></span><span>Thiết bị chính hãng, kiểm tra kỹ trước mỗi lần giao</span></li>
+          <li><span data-icon="truck"></span><span>Nhận tại điểm hẹn hoặc giao tận nơi trong TP.HCM</span></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- ============ MÔ TẢ / THÔNG SỐ ============ -->
+    <section class="tabs" aria-label="Thông tin chi tiết">
+      <div class="tab-list" role="tablist">
+        <button role="tab" id="tab-desc" aria-controls="panel-desc" aria-selected="true">Mô tả</button>
+        <button role="tab" id="tab-spec" aria-controls="panel-spec" aria-selected="false" tabindex="-1">Thông số</button>
+      </div>
+      <div class="tab-panel desc" role="tabpanel" id="panel-desc" aria-labelledby="tab-desc"></div>
+      <div class="tab-panel" role="tabpanel" id="panel-spec" aria-labelledby="tab-spec" hidden></div>
+    </section>
+
+    <!-- ============ SẢN PHẨM LIÊN QUAN ============ -->
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Có thể bạn cần</p>
+          <h2 class="section-title">Thiết bị cùng danh mục</h2>
+        </div>
+        <a class="link-more" href="products.html" id="related-more" data-icon-after="arrow">Xem tất cả</a>
+      </div>
+      <div class="product-grid" id="related"></div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/product.js"></script>
+</body>
+</html>

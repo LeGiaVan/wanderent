@@ -1,0 +1,577 @@
+// Tự sinh từ output/products.json — chạy lại: .venv/bin/python web/build_data.py
+// Dùng file .js (không fetch JSON) để mở trực tiếp index.html bằng trình duyệt vẫn chạy.
+window.WANDERENT_PRODUCTS = [
+ {
+  "ma_sp": "LEU01",
+  "ten_sp": "Lều vệ sinh Naturehike Folding Toilet Tent NH17Z002-P",
+  "danh_muc": "Lều",
+  "thong_so": "Trọng lượng: 2.7kg; Kích thước khi mở: 190 x 115 x 115cm; Kích thước gấp gọn: Φ55×6cm",
+  "mo_ta": "Lều được thiết kế với khả năng tự bung, không mất nhiều thời gian lắp đặt, mở lều chỉ với vài thao tác đơn giản. Lều được sử dụng làm nơi thay đồ, vệ sinh hoặc sử dụng che nắng khi câu cá.\nĐặc điểm nổi bật:\nLều có kích thước 190x115x115cm khi sử dụng, có 1 cửa ra vào và 1 cửa sổ nhỏ với 2 lớp: 1 lớp chống gió, mưa và 1 lớp lưới chống côn trùng\nThiết kế thông minh với cửa sổ thông khí, túi nhỏ đựng đồ cá nhân bên trong, móc dùng để treo đèn hoặc túi đồ vệ sinh cá nhân.\nLều được làm từ vải sợi Polyester 190T, chống gió tốt, ngăn mưa rào nhiều giờ với lượng nước lên tới 2000mm\nKích thước xếp gọn của lều chỉ 55x6cm, cất gọn trong túi đựng đi kèm, có thể đeo vai, xách tay\nGiới thiệu về thương hiệu Naturehike:\nĐược thành lập vào năm 2005,\nNaturehike\nlà một thương hiệu sản phẩm ngoài trời chuyên nghiệp. Ủng hộ khái niệm thương hiệu về “du lịch ngoài trời nhẹ nhàng” và cam kết cung cấp các thiết bị ngoài trời có trọng lượng nhẹ chất lượng cao. Họ là một doanh nghiệp thương hiệu chuyên về nghiên cứu và phát triển sản phẩm, thiết kế và sản xuất.\nNaturehike\nbán những sản phẩm phục vụ đi bộ đường dài, leo núi, cắm trại và các sản phẩm thể thao ngoài trời khác.\nThương hiệu\nNaturehike\ntạo ra các thiết bị ngoài trời tự nhiên, nhẹ và chuyên nghiệp. Sản phẩm của họ trải qua quá trình sản xuất và thử nghiệm tinh vi. Tất cả các sản phẩm của\nNaturehike\nđều được kiểm tra và thử nghiệm bởi chuyên viên có kinh nghiệm ngoài trời, những người tham gia vào khâu sản xuất từ đầu đến cuối.\nNaturehike\ntự hào với chất lượng sản phẩm của họ và đảm bảo rằng chất liệu và tay nghề sẽ không có sai sót.\nNaturehike\nthiết kế những sản phẩm khiến việc ra ngoài trời thoải mái hơn và ít phức tạp hơn. Thương hiệu này cũng rất coi trọng trải nghiệm và phản hồi của khách hàng để đảm bảo sự phát triển và cải tiến hơn nữa cho sản phẩm của mình. Điều này đã làm cho\nNaturehike\ntrở thành một thương hiệu chất lượng, có tiếng tăm trong cộng đồng thể thao ngoài trời.\nChúng ta có thể thấy,\nNaturehike\nsử dụng vẻ đẹp của thiên nhiên làm nguồn cảm hứng để nâng cao trải nghiệm hàng ngày cho người dùng ủng hộ việc đi bộ đường dài tự nhiên và phóng khoáng.",
+  "link_nguon": "https://wetrek.vn/san-pham/leu-ve-sinh-naturehike-folding-toilet-tent-nh17z002-p.htm",
+  "variants": [
+   {
+    "ma_bien_the": "LEU01_XANH_REU",
+    "ma_sp": "LEU01",
+    "mau_sac": "Xanh rêu",
+    "gia_goc": 790000,
+    "link_anh": "https://wetrek.vn/pic/products/leu-ca-nan-natureike-9975-9_638452284953996095.jpg;https://wetrek.vn/pic/products/leu-ca-nan-natureike-9975-2_638829914658655322.jpg;https://wetrek.vn/pic/products/leu-ca-nan-natureike-9975-7_638829914730686069.jpg"
+   },
+   {
+    "ma_bien_the": "LEU01_XANH_DUONG",
+    "ma_sp": "LEU01",
+    "mau_sac": "Xanh dương",
+    "gia_goc": 790000,
+    "link_anh": "https://wetrek.vn/pic/products/leu-ca-nan-natureike-9975-10_638452285242815652.jpg;https://wetrek.vn/pic/products/leu-ca-nan-natureike-9975-2_638829913999597175.jpg;https://wetrek.vn/pic/products/leu-ca-nan-natureike-9975-7_638829914120533781.jpg"
+   },
+   {
+    "ma_bien_the": "LEU01_XANH_LA",
+    "ma_sp": "LEU01",
+    "mau_sac": "Xanh lá",
+    "gia_goc": 790000,
+    "link_anh": "https://wetrek.vn/pic/products/leu-ca-nan-natureike-9975-11_638452285118067632.jpg;https://wetrek.vn/pic/products/leu-ca-nan-natureike-9975-2_638829914339594993.jpg;https://wetrek.vn/pic/products/leu-ca-nan-natureike-9975-1_638829914409125587.jpg"
+   },
+   {
+    "ma_bien_the": "LEU01_KAKI",
+    "ma_sp": "LEU01",
+    "mau_sac": "Kaki",
+    "gia_goc": 970000,
+    "link_anh": "https://wetrek.vn/pic/products/leu-ve-sinh-thay-do-naturehike-nh17z002-p-brown-5_638452284828387629.jpg;https://wetrek.vn/pic/products/Leu-ve-si_638260644315845005_HasThumb.png;https://wetrek.vn/pic/products/Leu-ve-si_638260645880438858_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "LEU02",
+  "ten_sp": "Lều 6 người Naturehike Pyramid Tent NH20ZP013",
+  "danh_muc": "Lều",
+  "thong_so": "Kích thước mở rộng: 400×346×240cm; Kích thước đóng gói: 65×26×38cm; Trọng lượng: 8.5kg",
+  "mo_ta": "Lều chóp với thiết kế cửa đi kèm mái hiên cực kỳ hữu ích. Mái che bên ngoài có thể dùng làm nơi che nắng che mưa, phòng thay đồ tạm thời.\nĐặc điểm nổi bật:\nVải chống thấm: vải Oxford chống thấm nước PU 3000mm. Quá trình mã hóa 150D vải, với lớp phủ bạc, chống thấm nước và gió, ổn định và bền.\nChống nắng: Công nghệ tráng bạc chống nắng cho lều có thể giảm thiểu tác hại của tia UV-A / UV-B lên da một cách hiệu quả.\nThiết kế cửa đôi: thiết kế cửa đôi để thông gió tốt hơn. Thiết kế cửa trước và cửa sau, ra vào thông gió thuận tiện.\nBền bỉ và linh hoạt cao: chỉ số PU 2000mm với khóa kéo chất lượng không bị kẹt để bảo vệ toàn diện và sử dụng thuận tiện.\nThiết kế và chức năng: Mái che bên ngoài có thể dùng làm nơi che nắng che mưa, phòng thay đồ tạm thời, phòng tắm và nhà vệ sinh đơn thuần.\nLều lưới bên trong đủ không gian làm phòng ngủ cho những người có tầm nhìn tuyệt vời. Sử dụng toàn bộ lều đi kèm với sự an toàn.",
+  "link_nguon": "https://wetrek.vn/san-pham/leu-6-nguoi-naturehike-pyramid-tent-nh20zp013.htm",
+  "variants": [
+   {
+    "ma_bien_the": "LEU02_MACDINH",
+    "ma_sp": "LEU02",
+    "mau_sac": "",
+    "gia_goc": 7900000,
+    "link_anh": "https://wetrek.vn/pic/products/leu-naturehike-nh20zp013-3_638835003942783416.jpg;https://wetrek.vn/pic/products/leu-naturehike-nh20zp013-4_638835004004814060.jpg;https://wetrek.vn/pic/products/leu-naturehike-nh20zp013-5_638835004058094940.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "LEU03",
+  "ten_sp": "Lều che nắng Snowline Blue Sun Shadow SN95ULT001",
+  "danh_muc": "Lều",
+  "thong_so": "Kích thước thực tế: 240x240x165 cm; Kích thước đóng gói: 64 x 19 x 19 cm; Trọng lượng (grams): 6.5 kg",
+  "mo_ta": "Lều che nắng Snowline Blue Sun Shadow SN95ULT001\nthích hợp trong những chuyến đi dã ngoại, cắm trại. Chiếc lều được thiết kế thông minh với nhiều tính năng tiện lợi, có thể chứa tối đa 4 người. Đặc biệt, lều có phần mái mở rộng giúp đem lại bóng mát rộng rãi mà không cần phải sử dụng thêm tấm bạt riêng, đem lại cho bạn những phút giây thư giãn thoải mái nhất.\nThoáng mát và thông gió:\nLều có lưới mở 4 mặt giúp thông gió tốt và che nắng linh hoạt, mang đến cho bạn không gian thoáng mát và thoải mái trong mọi điều kiện thời tiết.\nBóng mát rộng rãi:\nPhần mái mở rộng với thiết kế thẳng đứng mang lại bóng mát rộng rãi mà không cần tấm bạt riêng (lưu ý không sử dụng khi trời mưa).\nTiện lợi:\nLều có móc treo đèn trên trần lều, giúp bạn dễ dàng treo đèn để chiếu sáng vào ban đêm.\nDễ dàng lắp đặt:\nLều sử dụng phương pháp cố định kiểu vòng, giúp cột chính được cố định chắc chắn và dễ dàng lắp đặt.\nĐa dạng màu sắc:\nSản phẩm có 2 màu là Xanh và đỏ cho bạn có thể thoải mái lựa chọn theo sở thích của bạn.",
+  "link_nguon": "https://wetrek.vn/san-pham/leu-che-nang-snowline-blue-sun-shadow-sn95ult001.htm",
+  "variants": [
+   {
+    "ma_bien_the": "LEU03_RED",
+    "ma_sp": "LEU03",
+    "mau_sac": "Red",
+    "gia_goc": 3150000,
+    "link_anh": "https://wetrek.vn/pic/products/blue-sun-shadow-red_638623543599529013.jpg;https://wetrek.vn/pic/products/bluesunshadow19q_638538018835982798.jpg;https://wetrek.vn/pic/products/bluesunshadow197_638538018836139061.jpg"
+   },
+   {
+    "ma_bien_the": "LEU03_MINT",
+    "ma_sp": "LEU03",
+    "mau_sac": "Mint",
+    "gia_goc": 3150000,
+    "link_anh": "https://wetrek.vn/pic/products/blue-sun-shadow-mint_638623543525158613.jpg;https://wetrek.vn/pic/products/bluesunshadow19q_638538018685515149.jpg;https://wetrek.vn/pic/products/bluesunshadow197_638538018685515149.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "LEU04",
+  "ten_sp": "Lều mái vòm Snowline Titandome Tent SND5ULT010 - Ivory",
+  "danh_muc": "Lều",
+  "thong_so": "Kích thước thực tế: 490 x 280 x 190 cm; Kích thước đóng gói: 70 x 25 x 25 cm; Trọng lượng (grams): 13 kg",
+  "mo_ta": "Lều mái vòm Snowline Titandome Tent SND5ULT010 - Ivory\nphù hợp cho những chuyến đi dã ngoại, cắm trại. Được làm từ chất liệu cao cấp, thiết kế thông minh cùng nhiều tính năng vượt trội, chiếc lều sẽ mang đến cho bạn trải nghiệm an toàn và thoải mái nhất.\nKhung lều chắc chắn:\nSử dụng chất liệu nhôm cao cấp, khung lều Titan Dome Tent SND5ULT010 có độ bền cao, chịu được mọi điều kiện thời tiết khắc nghiệt. Khung lều được thiết kế dạng vòm giúp tăng khả năng chống gió và chống mưa hiệu quả.\nThiết kế thông gió:\nLều có hệ thống thông gió thông minh giúp không khí lưu thông tốt, tạo sự thoáng mát và ngăn ngừa tình trạng ngưng tụ hơi nước, đảm bảo cho bạn luôn cảm thấy thoải mái trong suốt thời gian sử dụng.\nKhông gian rộng rãi:\nKích thước bên trong lều rộng rãi 270x270cm, đủ chỗ cho 4 người lớn nghỉ ngơi thoải mái. Trần lều cao và cửa có thể mở được cả 2 bên giúp tăng thêm cảm giác thoáng mát và dễ dàng ra vào lều.\nMái che tiện lợi:\nTấm bạt che nắng đi kèm có thể dựng lên tại lối ra vào, giúp tạo bóng mát, che mưa và mở rộng không gian sử dụng.\nThoải mái:\nLều Snowline Titan Dome Tent SND5ULT010 mang đến không gian rộng rãi, thoáng mát, giúp bạn có những giấc ngủ ngon và thư giãn trong khi cắm trại.\nAn toàn:\nKhung lều chắc chắn, chống chịu được mọi điều kiện thời tiết. Chất liệu vải chống thấm nước, đảm bảo an toàn cho bạn trong suốt chuyến đi.",
+  "link_nguon": "https://wetrek.vn/san-pham/leu-mai-vom-snowline-titandome-tent-snd5ult010-ivory.htm",
+  "variants": [
+   {
+    "ma_bien_the": "LEU04_MACDINH",
+    "ma_sp": "LEU04",
+    "mau_sac": "",
+    "gia_goc": 10995000,
+    "link_anh": "https://wetrek.vn/pic/products/titan_dome_tent_2014a_638644951072953193.jpg;https://youtu.be/F0YBAimWu-k;https://wetrek.vn/pic/products/leu-cam-trai-4-nguoi-snowline-titan-dome-tent-wetr_638542983079804509.jpeg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "LEU05",
+  "ten_sp": "Lều mái vòm Snowline Astra Dome Tent SND5ULT011 - Ivory Black",
+  "danh_muc": "Lều",
+  "thong_so": "Kích thước thực tế: 410 x 280 x 170 cm; Kích thước đóng gói: 66 x 24.5 x 24.5 cm; Trọng lượng (grams): 10 kg",
+  "mo_ta": "Lều mái vòm Snowline Astra Dome Tent SND5ULT011 - Ivory Black\ncó thiết kế thông minh mang đến khả năng che chắn hiệu quả. Không gian sinh hoạt rộng rãi, thoáng mát, đảm bảo an toàn và thoải mái cho các nhóm bạn hoặc gia đình.\nThiết kế thông gió:\nLều mái vòm Snowline Astra Dome Tent SND5ULT011 - Ivory Black\ncó hệ thống thông gió hiệu quả giúp không khí lưu thông dễ dàng, ngăn ngừa sự ngưng tụ hơi nước, tạo cảm giác thoáng mát và thoải mái bên trong lều.\nThoáng mát và thoải mái:\nThiết kế thông gió và cửa sổ lưới giúp tạo cảm giác thoáng mát, thoải mái bên trong lều, hạn chế sự bí bách.\nChỗ ngủ rộng rãi:\nLều cung cấp không gian ngủ rộng rãi với kích thước 270*220cm, phù hợp cho 4 người sử dụng.\nCửa sổ lưới bên:\nCửa sổ lưới được làm từ da và lưới giúp giảm thiểu sự ngưng tụ, cho phép bạn quan sát bên ngoài dễ dàng mà vẫn đảm bảo lưu thông không khí.\nThiết kế thông minh:\nBên trong lều có nhiều ngăn lưới để đựng đồ cơ bản, giúp bạn sắp xếp đồ đạc gọn gàng và ngăn nắp.Tấm bạt trước lều có thể mở rộng để tăng kích thước bóng râm, giúp bạn tránh nắng nóng hiệu quả mà không cần sử dụng thêm bạt riêng.\nChe chắn hiệu quả:\nLều mái vòm Snowline Astra Dome Tent SND5ULT011 - Ivory Black\nđược làm từ chất liệu cao cấp, có khả năng chống thấm nước và chống nắng tốt, giúp bảo vệ bạn khỏi các tác động của thời tiết như mưa, nắng, gió,...\nVới màu sắc hiện đại bắt mắt,\nLều mái vòm Snowline Astra Dome Tent SND5ULT011 - Ivory Black\nlà một lựa chọn tuyệt vời cho những ai yêu thích các hoạt động ngoài trời.",
+  "link_nguon": "https://wetrek.vn/san-pham/leu-mai-vom-snowline-astra-dome-tent-snd5ult011.htm",
+  "variants": [
+   {
+    "ma_bien_the": "LEU05_MACDINH",
+    "ma_sp": "LEU05",
+    "mau_sac": "",
+    "gia_goc": 8995000,
+    "link_anh": "https://wetrek.vn/pic/products/acad1f1484d4d274aa763b98272d2b59_638542351056256220.jpg;https://wetrek.vn/pic/products/astra_dome_ten8t_638542349722141360.jpg;https://wetrek.vn/pic/products/202606978_1177665139377908_59787_638542349722091513.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "LEU06",
+  "ten_sp": "Lều hình ống Snowline Saturn Shelter SND5ULT016 - Black",
+  "danh_muc": "Lều",
+  "thong_so": "Kích thước thực tế: 520 x 340 x 210 cm; Kích thước đóng gói: 65 x 27 x 27 cm; Trọng lượng (kg): 13.2 kg",
+  "mo_ta": "Lều hình ống Snowline Saturn Shelter SND5ULT016 - Black\nan toàn, tiện lợi và dễ dàng lắp đặt, phù hợp cho các hoạt động ngoài trời. Với thiết kế đơn giản, lều mang đến khả năng che chắn hiệu quả, cùng cấu trúc cố định chắc chắn bằng cột nhôm, đảm bảo an toàn cho người sử dụng trong mọi điều kiện thời tiết.\nCố định chắc chắn:\nLều được cố định bằng các cột nhôm, mang lại độ bền vững chắc, đảm bảo lều không bị lật đổ hay sụp xuống do gió mạnh.\nThoáng mát:\nCửa sổ thông gió trần giúp lưu thông không khí bên trong lều, tạo cảm giác thoáng mát và thoải mái cho người sử dụng.\nDễ dàng điều chỉnh:\nDây đai có thể điều chỉnh độ căng, giúp bạn dễ dàng căng lều sau khi lắp đặt, đảm bảo lều được căng phẳng và chắc chắn.\nTiện lợi:\nLều đi kèm dây và nút chặn, giúp bạn dễ dàng cố định lều vào cọc hoặc các vật thể khác.\nKhông gian rộng rãi:\nThiết kế rộng rãi, đủ không gian cho 4 người có thể thoải mái hoạt động và nghỉ ngơi.\nChe chắn hiệu quả:\nLều được làm từ chất liệu cao cấp, có khả năng chống thấm nước và chống nắng tốt, giúp bảo vệ bạn khỏi các tác động của thời tiết như mưa, nắng, gió,...\nLều hình ống Snowline Saturn Shelter SND5ULT016 - Black\nphù hợp cho những chuyến dã ngoại, cắm trại với bạn bè hoặc gia đình. Thiết kế đơn giản, nhỏ gọn, tiện lợi và an toàn của lều hứa hẹn sẽ mang đến cho bạn những phút giây thư giãn tuyệt vời nhất.",
+  "link_nguon": "https://wetrek.vn/san-pham/leu-hinh-ong-snowline-saturn-shelter-snd5ult016-black.htm",
+  "variants": [
+   {
+    "ma_bien_the": "LEU06_MACDINH",
+    "ma_sp": "LEU06",
+    "mau_sac": "",
+    "gia_goc": 12995000,
+    "link_anh": "https://wetrek.vn/pic/products/saturn-shelter_638644929932448601.jpg;https://wetrek.vn/pic/products/leu-hinh-ong-4-nguoi-snowline-saturn-shelter-wetre_638644930609437680.jpg;https://wetrek.vn/pic/products/leu-hinh-ong-4-nguoi-snowline-saturn-shelter-wetre_638542292987617123.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "LEU07",
+  "ten_sp": "Lều hình ống 2 phòng Snowline Saturn 2 Room Tent Pro SNE5ULT009 - Sand Tan",
+  "danh_muc": "Lều",
+  "thong_so": "Kích thước thực tế: 640x340x210cm; Kích thước đóng gói: 78x34x34cm; Trọng lượng (kg): 20.3 kg",
+  "mo_ta": "Lều hình ống 2 phòng Snowline Saturn 2 Room Tent Pro SNE5ULT009 - Sand Tan\nlà lựa chọn hoàn hảo cho những ai yêu thích khám phá thiên nhiên và mong muốn có những trải nghiệm cắm trại tuyệt vời. Lều phù hợp cho mọi hoạt động ngoài trời như cắm trại, dã ngoại, leo núi, câu cá hay đi du lịch.\nThiết kế 3 lớp an toàn và chống thấm nước:\nLều được cấu tạo từ 3 lớp vật liệu cao cấp, mang đến sự an toàn và tiện lợi cho người sử dụng. Lớp ngoài cùng làm từ chất liệu CPAI-84 tiêu chuẩn 6 chống cháy hiệu quả, bảo vệ bạn khỏi những nguy cơ tiềm ẩn. Lớp Poly ripstop có cấu trúc hình bàn cờ với các sợi đan xen chặt chẽ, giúp chống đứt rách tối ưu. Lớp phủ polyurethane (PU) bên trong tăng cường độ đàn hồi và khả năng chống thấm nước cho lều, đảm bảo bạn luôn khô ráo và thoải mái trong mọi điều kiện thời tiết.\nCọc lều bằng nhôm 7001 siêu bền:\nLều sử dụng cọc lều làm từ nhôm 7001, một loại vật liệu nổi tiếng với độ bền và độ cứng cáp cao. Nhờ vậy, lều có thể chịu được sức gió mạnh và đảm bảo an toàn cho bạn trong suốt thời gian sử dụng.\nDễ dàng điều chỉnh độ căng:\nLều được trang bị hệ thống dây đai có thể điều chỉnh độ căng linh hoạt. Sau khi lắp đặt, bạn có thể dễ dàng căng lều bằng cách kéo dây đai, giúp lều có cấu trúc vững chãi và chống chọi tốt với mọi điều kiện thời tiết.\nThiết kế thông minh và tiện lợi\n: Lều có lỗ dây lều bên trong để luồn dây ra bên phải lửa lều bên trong, thuận tiện cho việc sử dụng. Cửa sổ thông gió trần dài hết cỡ giúp thông gió tốt, mang đến không gian thoáng mát và dễ chịu cho người sử dụng. Dây đai điều chỉnh độ căng của Ridgepole giúp bạn dễ dàng căng lều mà không cần tốn nhiều sức lực.\nTấm trải sàn độc quyền:\nChống ẩm và tránh ô nhiễm trên sàn, giúp bạn luôn có một không gian nghỉ ngơi sạch sẽ và an toàn.\nTrải nghiệm không gian rộng rãi và thoải mái:\nLều có kích thước rộng rãi, đủ chỗ cho 4 người có thể nghỉ ngơi một cách thoải mái. Cửa mở phía trước và cửa dựng linh hoạt giúp bạn dễ dàng di chuyển ra vào lều và tận hưởng không gian ngoài trời trong lành mà không cần thêm bạt che riêng biệt.\nBảo vệ tối ưu trong mọi điều kiện thời tiết:\nLều được trang bị mái che và tấm phủ chuyên dụng giúp ngăn ngừa thiệt hại do mưa và tuyết, đồng thời tăng cường khả năng che nắng và giảm thiểu sự ngưng tụ hơi nước, đảm bảo bạn luôn khô ráo và thoải mái trong mọi điều kiện thời tiết.\nDễ dàng sử dụng và di chuyển:\nLều có cấu trúc đơn giản, dễ dàng lắp đặt và tháo dỡ chỉ trong vài phút. Ngoài ra trọng lượng nhẹ và kích thước nhỏ gọn khi gấp lại của lều cũng giúp bạn dễ dàng di chuyển và mang theo trong những chuyến dã ngoại hay leo núi.\nVới nhiều lợi ích vượt trội,\nLều hình ống 2 phòng Snowline Saturn 2 Room Tent Pro SNE5ULT009 - Sand Tan\nhứa hẹn sẽ mang đến cho bạn những trải nghiệm cắm trại tuyệt vời và đáng nhớ nhất.",
+  "link_nguon": "https://wetrek.vn/san-pham/leu-hinh-ong-2-phong-snowline-saturn-2-room-tent-pro-sne5ult009.htm",
+  "variants": [
+   {
+    "ma_bien_the": "LEU07_MACDINH",
+    "ma_sp": "LEU07",
+    "mau_sac": "",
+    "gia_goc": 22995000,
+    "link_anh": "https://wetrek.vn/pic/products/goods1_1647325227_638542204936133103.jpg;https://youtu.be/6DW15RH7Gfs;https://wetrek.vn/pic/products/leu-hinh-ong-2-phong-snowline-saturn-2-room-tent-p_638542154162552582.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "LEU08",
+  "ten_sp": "Lều tự bung gia đình 4 người Snowline POP UP Family 4 Tent SND5ULT008 - Ivory",
+  "danh_muc": "Lều",
+  "thong_so": "Kích thước thực tế: 380x260x150 cm; Kích thước đóng gói: 100x8 cm; Trọng lượng (grams): 11.2 kg",
+  "mo_ta": "Lều tự bung gia đình 4 người Snowline POP UP Family 4 Tent SND5ULT008 - Ivory\ncó thiết kế thông minh với khả năng tự bung mở và thu gọn, giúp bạn tiết kiệm tối đa thời gian và công sức dựng lều. Lều có kích thước rộng rãi, có thể chứa tối đa 4 người, phù hợp cho các gia đình hoặc nhóm bạn đi cắm trại cùng nhau.\nLắp đặt nhanh chóng:\nLều có thể tự bung mở chỉ trong vài giây, giúp bạn tiết kiệm thời gian và công sức khi dựng lều.\nKhông gian cho 4 người:\nLều có kích thước rộng rãi, với diện tích sử dụng 380x260x150 cm, có thể chứa tối đa 4 người, phù hợp cho các gia đình hoặc nhóm bạn đi cắm trại cùng nhau.\nAn toàn cho người sử dụng:\nLều được sản xuất với vật liệu cao cấp và đạt tiêu chuẩn an toàn cho sản phẩm gia dụng, đảm bảo an toàn cho người sử dụng. Thân lều làm từ poly taffeta 68D có khả năng chống nước 1500mm.\nCấu trúc kép thông minh:\nLều được sản xuất với cấu trúc kép gồm lớp bên ngoài và lều bên trong, giúp tạo ra không gian trống ở phòng phía trước, giảm thiểu sự ngưng tụ hơi nước và mang đến cảm giác thông thoáng cho người sử dụng.\nChân dựng tạo tán che:\nLều có chân dựng tạo tán che bóng mát, được áp dụng cả hai lối vào của lều. Tán che có thể dùng để chặn gió và mưa, giúp bảo vệ bạn khỏi các yếu tố thời tiết.\nHệ thống thông gió hiệu quả:\nLều được trang bị hệ thống thông gió ở mặt trên của cả 2 mặt lều, giúp giảm thiểu hiện tượng ngưng tụ hơi nước bên trong, mang đến không gian thoáng mát và thoải mái cho người sử dụng.\nCửa sổ lưới thông thoáng:\nLều có 1 cửa sổ bên bằng lưới và da, giúp tăng cường lưu thông không khí bên trong lều và giảm thiểu sự ngưng tụ hơi nước.\nTúi đựng đồ tiện lợi:\nLều có túi đựng đồ dạng lưới bên trong lều, giúp bạn có thể dễ dàng cất giữ các vật dụng nhỏ như điện thoại di động, ví, chìa khóa,...",
+  "link_nguon": "https://wetrek.vn/san-pham/leu-tu-bung-gia-dinh-4-nguoi-snowline-pop-up-family-4-tent-snd5ult008-ivory.htm",
+  "variants": [
+   {
+    "ma_bien_the": "LEU08_MACDINH",
+    "ma_sp": "LEU08",
+    "mau_sac": "",
+    "gia_goc": 6995000,
+    "link_anh": "https://wetrek.vn/pic/products/pop-up-family-4-tent_638644934849330437.jpg;https://youtu.be/-Kpyz6ze8E4?si=7ve3cUDwZmwGkp81;https://wetrek.vn/pic/products/b85aa889-d54b-48b5-938f-c37992167dae_638537808435036621.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "TUINGU01",
+  "ten_sp": "Túi ngủ mùa đông 2 lớp Ryder 2 Layers Mummy Sleeping Bag D1005 Orange - 3286",
+  "danh_muc": "Túi ngủ",
+  "thong_so": "Kích thước thực tế: 220 x 80 x 50 cm; Kích thước đóng gói: 46 x 25 cm; Trọng lượng (grams): 2 kg",
+  "mo_ta": "Ryder là một thương hiệu outdoor nổi tiếng thuộc sở hữu của tập đoàn Ryder ở Trung Quốc được thành lập vào năm 2009 chuyên cung cấp các thiết bị ngoài trời cho thị trường cao cấp trên thế giới một cách chuyên nghiệp. Các sản phẩm chính của Ryder bao gồm: lều, túi ngủ, balo, bếp dã ngoại, túi khô, nệm... được xuất khẩu sang các nước Bắc Mỹ, Châu Âu, Nhật Bản và các quốc gia, khu vực khác. Tất cả các sản phẩm của Ryder đều được sản xuất theo yêu cầu tiêu chuẩn như CE, FDA. Bên cạnh những tiêu chuẩn này, Ryder còn chú trọng đến sự hài lòng của các khách hàng, bởi khách hàng là người tiêu dùng đầu tiên. Và cho đến ngày nay, thương hiệu Ryder đã dành được danh tiếng và nhận được sự đánh giá cao từ khách hàng toàn cầu.\nTúi ngủ mùa đông 2 lớp Ryder 2 Layers Mummy Sleeping Bag D1005 Orange - 3286\nlà loại túi ngủ đông dáng con nhộng với lớp ngoài chống thấm và cách nhiệt tối đa, phần lõi bông giữ nhiệt rất tốt. Thiết kế rất kín nhưng vẫn có độ thông thoáng, phù hợp sử dụng ở những nơi có nhiệt độ thấp.\nThiết kế dáng con nhộng với mũ trùm đầu hay dùng làm gối. Phần mũ có dây rút để đảm bảo giữ nhiệt tốt nhất\nLớp ngoài bằng 210T ripstop nylon rất bền, chống thấm và cách nhiệt cực tốt\nGiữ ấm cực tốt, sử dụng được ở những vùng có nhiệt độ lạnh lên đến -20ºC\nHệ thống khóa 2 mặt chạy dọc thân túi tiện lợi mở túi ngủ từ bên trong\nCó thể ghép 2 túi ngủ lại thành một túi ngủ đôi tiện dụng\nTrọng lượng nhẹ, gấp lại nhỏ gọn trong túi đựng sau khi sử dụng\nKích thước: 220 x 80 x 50 cm\nTrọng lượng: 2kg\n(Mũ trùm đầu rất kín và ấm áp)\n(Hệ thống khóa 2 mặt tiện lợi đóng mở túi)\n(Có thể ghép 1 túi khóa sườn phải với 1 túi khóa sườn trái tạo thành túi ngủ đôi)",
+  "link_nguon": "https://wetrek.vn/san-pham/tui-ngu-mua-dong-ryder-d1005.htm",
+  "variants": [
+   {
+    "ma_bien_the": "TUINGU01_MACDINH",
+    "ma_sp": "TUINGU01",
+    "mau_sac": "",
+    "gia_goc": 1590000,
+    "link_anh": "https://wetrek.vn/pic/products/Tui-ngu-mua-dong-Ryder-D1005.jpg;https://wetrek.vn/pic/products/2843_635495989269120722.png;https://wetrek.vn/pic/products/2843_635495989277141180.png"
+   }
+  ]
+ },
+ {
+  "ma_sp": "TUINGU02",
+  "ten_sp": "Túi ngủ mùa đông 2 lớp Ryder 2 Layers Mummy Sleeping Bag D1005 Blue - 7484",
+  "danh_muc": "Túi ngủ",
+  "thong_so": "Kích thước thực tế: 220 x 80 x 50 cm; Kích thước đóng gói: 46 x 25 cm; Trọng lượng (grams): 2kg",
+  "mo_ta": "Ryder là một thương hiệu outdoor nổi tiếng thuộc sở hữu của tập đoàn Ryder. Được thành lập vào năm 2009, Ryder chuyên cung cấp các trang thiết bị cho hoạt động ngoài trời, phục vụ các thị trường cao cấp trên thế giới. Các sản phẩm nổi bật của Ryder bao gồm: lều, túi ngủ, ba lô, gậy leo núi, bếp dã ngoại, túi khô, nệm, ... được xuất khẩu sang các nước Bắc Mỹ, Châu Âu, Nhật Bản và nhiều quốc gia, khu vực khác được sản xuất theo yêu cầu tiêu chuẩn như CE, FDA. Cho đến nay, thương hiệu Ryder đã trở thành một thương hiệu danh tiếng với sự đánh giá cao từ khách hàng toàn cầu.\nTúi ngủ mùa đông 2 lớp Ryder 2 Layers Mummy Sleeping Bag D1005 Blue - 7484\nlà loại túi ngủ đông dáng con nhộng với lớp ngoài chống thấm và cách nhiệt tối đa, phần lõi bông giữ nhiệt rất tốt. Thiết kế rất kín nhưng vẫn có độ thông thoáng, phù hợp sử dụng ở những nơi có nhiệt độ thấp.\nThiết kế dáng con nhộng với mũ trùm đầu hay dùng làm gối. Phần mũ có dây rút để đảm bảo giữ nhiệt tốt nhất\nLớp ngoài bằng 210T ripstop nylon rất bền, chống thấm và cách nhiệt cực tốt\nGiữ ấm cực tốt, sử dụng được ở những vùng có nhiệt độ lạnh lên đến -20ºC\nHệ thống khóa 2 mặt chạy dọc thân túi tiện lợi mở túi ngủ từ bên trong\nCó thể ghép 2 túi ngủ lại thành một túi ngủ đôi tiện dụng\nTrọng lượng nhẹ, gấp lại nhỏ gọn trong túi đựng sau khi sử dụng\nKích thước: 220 x 80 x 50 cm\nTrọng lượng: 2kg",
+  "link_nguon": "https://wetrek.vn/san-pham/tui-ngu-mua-dong-2-lop-ryder-2-layers-mummy-sleeping-bag-d1005-blue-7484.htm",
+  "variants": [
+   {
+    "ma_bien_the": "TUINGU02_MACDINH",
+    "ma_sp": "TUINGU02",
+    "mau_sac": "",
+    "gia_goc": 1590000,
+    "link_anh": "https://wetrek.vn/pic/products/80808747-31cf-49ce-bcd9-d5f053aa54a5.jpg;https://wetrek.vn/pic/products/11254_636074870994846364_HasThumb.jpg;https://wetrek.vn/pic/products/11254_636074871008418388_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "TUINGU03",
+  "ten_sp": "Túi ngủ Snowline Sleeping Soft Warm 1000 Crazy Idea CRH5USB002",
+  "danh_muc": "Túi ngủ",
+  "thong_so": "Kích Thước Sử Dụng (Dài x Rộng): 80 x 190cm; Kích Thước Gấp Gọn (Dài x Đường Kính): 26 x 45 cm; Trọng Lượng: 1.7 kg",
+  "mo_ta": "Túi ngủ Snowline Sleeping Soft Warm 1000 Crazy Idea CRH5USB002\nlà sự lựa chọn hoàn hảo cho những người yêu thích dã ngoại, cắm trại trong điều kiện thời tiết 3 mùa (Xuân, Hè, Thu). Sản phẩm được thiết kế với sự kết hợp giữa vật liệu giữ nhiệt cao cấp và lớp lót siêu mềm mại, đảm bảo mang lại giấc ngủ sâu và thoải mái tuyệt vời.\n1. Công Nghệ Giữ Nhiệt và Vật Liệu Êm Ái\nTúi ngủ Soft Warm 1000 tập trung vào chất lượng vật liệu để tối ưu hóa trải nghiệm người dùng:\nLớp Ruột Cao Cấp 1000g:\nTúi ngủ sử dụng\n1000g sợi Micro 3D Silk Fiber\nlàm chất liệu lấp đầy. Đây là loại sợi tơ lụa siêu nhỏ có khả năng cách nhiệt vượt trội, tạo ra một lớp đệm ấm áp và nhẹ, giúp nhiệt độ cơ thể được giữ ổn định suốt đêm.\nLót Velboa Mềm Mại:\nPhần lót bên trong là\nvải Velboa 100% Polyester\n, mang lại cảm giác mềm mại, êm ái như nhung. Sự mềm mại này tạo nên cảm giác ấm cúng, giúp người dùng dễ dàng thư giãn và chìm vào giấc ngủ.\nVỏ Ngoài Chống Thấm Nhẹ:\nVỏ ngoài làm từ\n210T Tongji\nvới\nlớp phủ chống thấm nước nhẹ\n(\nwater-repellent coating\n). Thiết kế này giúp túi ngủ chống bám bẩn, chống ẩm tốt và tăng cường độ bền, phù hợp với môi trường cắm trại.\n2. Tiêu Chuẩn Nhiệt Độ Lý Tưởng (Comfort Rating)\n3. Tính Năng Đa Dụng và Gọn Nhẹ\nSoft Warm 1000 không chỉ ấm áp mà còn rất tiện dụng:\nKết Nối Thành Túi Đôi 320cm:\nVới\nDây kéo mở rộng (Extension Zipper)\n, bạn có thể dễ dàng ghép hai túi ngủ đơn lại với nhau, tạo thành một túi ngủ đôi cực lớn với kích thước 320 x 190cm, mang lại không gian thoải mái cho cặp đôi hoặc gia đình.\nTrọng Lượng Nhẹ và Nén Gọn:\nVới trọng lượng chỉ\n1.7kg\nvà đi kèm túi nén chuyên dụng có khóa bấm nén (\ncompression buckles\n), túi ngủ có thể được nén lại gọn gàng chỉ còn 26 x 45cm giúp việc mang theo khi đi phượt, dã ngoại trở nên dễ dàng hơn bao giờ hết.\nCrazy Idea Soft Warm 1000\nlà sự đầu tư xứng đáng cho những trải nghiệm ngủ ngoài trời chất lượng, đảm bảo bạn luôn được bảo vệ và thư giãn tuyệt đối trong mọi chuyến đi.",
+  "link_nguon": "https://wetrek.vn/san-pham/tui-ngu-snowline-sleeping-soft-warm-1000-crazy-idea-crh5usb002.htm",
+  "variants": [
+   {
+    "ma_bien_the": "TUINGU03_XANH_REU",
+    "ma_sp": "TUINGU03",
+    "mau_sac": "Xanh rêu",
+    "gia_goc": 1590000,
+    "link_anh": "https://wetrek.vn/pic/products/2db8ba0d-8bee-4d3f-b9c0-bb0c90da373b_638987304362137082.jpg;https://wetrek.vn/pic/products/93e221a5-dc47-4eba-afc7-6a2ddfb3759e_638987304362293291.jpg;https://wetrek.vn/pic/products/sw-1000-2_638987304362137082.jpg"
+   },
+   {
+    "ma_bien_the": "TUINGU03_GHI",
+    "ma_sp": "TUINGU03",
+    "mau_sac": "Ghi",
+    "gia_goc": 1590000,
+    "link_anh": "https://wetrek.vn/pic/products/sw-1000-3_638987304452918974.jpg;https://wetrek.vn/pic/products/sw-1000-2_638987304453075234.jpg;https://wetrek.vn/pic/products/96de9d70-b736-4352-aa52-f473fe14c07a_638987304453075234.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "TUINGU04",
+  "ten_sp": "Túi ngủ Snowline Sleeping Soft Warm 400 Crazy Idea CRH5USB001",
+  "danh_muc": "Túi ngủ",
+  "thong_so": "Kích Thước: Khi sử dụng:, 74 x 180cm, (Dùng đơn), Khi cất giữ:, $38x 49 cm; Trọng Lượng: 1.2kg",
+  "mo_ta": "Túi ngủ Snowline Sleeping Soft Warm 400 Crazy Idea CRH5USB001\nlà túi ngủ lý tưởng, mang đến sự ấm áp, thoải mái và tính linh hoạt cao cho mọi chuyến cắm trại hay dã ngoại. Với thiết kế nhẹ, an toàn và các chi tiết tinh tế, sản phẩm đảm bảo mang lại trải nghiệm ngủ nghỉ tuyệt vời ngay cả khi ở ngoài trời.\n1. Chất Liệu Cao Cấp & Ấm Cúng\nLớp Vỏ Ngoài (Outer Shell):\nĐược làm từ\nVải Pongee 210T\ncó lớp phủ chống thấm nước . Lớp vải này có khả năng chống thấm nước hàng ngày, chống bẩn, chống ẩm và có độ bền vượt trội.\nLớp Lót Trong (Inner Lining):\nSử dụng\nVải Wellboa 100% Polyester\nmềm mại, mang lại cảm giác dễ chịu, ấm áp và thoải mái tối đa.\nSử dụng lớp lót Wellboa mềm mại bên trong để mang lại sự ấm cúng.\n2. Thiết Kế Mở Rộng Linh Hoạt (Dùng Đôi)\nKhóa Kéo Mở Rộng (Extension Zipper):\nTúi ngủ được thiết kế với khóa kéo chuyên dụng cho phép\nkết nối 2 túi ngủ\ncùng loại với nhau, tạo thành\nmột túi ngủ đôi\nlớn (kích thước sau khi kết nối:\n180cm x 296cm\nhoặc\n180cm x 148cm\n).\nSử Dụng Đa Dạng:\nCó thể mở rộng hoàn toàn (Full Front Opening) để sử dụng như một tấm chăn lớn, thảm lót sàn lều để ngăn hơi lạnh, hoặc gấp chồng lên nhau để tăng độ ấm vào những đêm lạnh.\nLưu ý:\nKhi kết nối, có thể có độ chênh lệch 2-3cm giữa các túi ngủ do quy trình sản xuất.\n3. Chi Tiết Tinh Tế Dành Cho Người Dùng\n01. Túi Bên Trong:\nCó túi nhỏ được may bên trong để bạn có thể cất giữ điện thoại di động hoặc các vật dụng nhỏ cá nhân an toàn.\n02. Khóa Kéo 2 Chiều:\nKhóa kéo có thể được mở từ cả hai phía, giúp dễ dàng điều chỉnh nhiệt độ và thông thoáng khi cần thiết.\n03. Móc Treo Ở Đáy:\nCó móc treo dạng webbing và vòng carabiner, tiện lợi cho việc bảo quản, đặc biệt dễ dàng cho việc phơi và làm khô sau khi giặt.\n04. Sử Dụng Làm Đệm/Gối:\nTúi ngủ nhẹ, sau khi cuộn và cất gọn vào túi đựng tích hợp (may liền), có thể được sử dụng làm\ngối hoặc đệm\n(cushion) tiện lợi.\n4. Hướng Dẫn Vệ Sinh & Bảo Quản\nVệ Sinh:\nKhuyến nghị\ngiặt tay\n. Nếu phải giặt máy, vui lòng sử dụng chế độ 'tiêu chuẩn' và\nphơi khô mà không cần vắt\n.",
+  "link_nguon": "https://wetrek.vn/san-pham/tui-ngu-snowline-sleeping-soft-warm-400-crazy-idea-crh5usb001.htm",
+  "variants": [
+   {
+    "ma_bien_the": "TUINGU04_MACDINH",
+    "ma_sp": "TUINGU04",
+    "mau_sac": "",
+    "gia_goc": 1190000,
+    "link_anh": "https://wetrek.vn/pic/products/9e96cf23-c765-4481-9590-eaea5260c685_638987277061146163.jpg;https://wetrek.vn/pic/products/491435e4-355f-4d88-8da8-272225030eb1_638987277061146163.jpg;https://wetrek.vn/pic/products/2fbc81b2-48eb-4383-aaa0-9c7b7c63039f_638987277061146163.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "TUINGU05",
+  "ten_sp": "Túi ngủ siêu nhẹ Gothiar Sleeping Bag LW180 GT250001",
+  "danh_muc": "Túi ngủ",
+  "thong_so": "Kích thước: 190 cm (thân) + 30 cm (mũ) x 75 cm (rộng); Trọng lượng: 700g ± 50g",
+  "mo_ta": "Túi ngủ siêu nhẹ Gothiar Sleeping Bag LW180 GT250001\nlà một lựa chọn lý tưởng cho những chuyến cắm trại và dã ngoại nhờ thiết kế gọn nhẹ và chất liệu cao cấp.\nĐặc Điểm Nổi Bật\nThiết kế gọn nhẹ:\nSản phẩm có thể cuộn lại nhỏ gọn trong túi nén, thuận tiện mang theo. Với trọng lượng chỉ khoảng\n700g (+- 50g)\n, túi ngủ này sẽ không làm nặng thêm hành trang của bạn.\nChất liệu cao cấp:\nLớp vỏ ngoài\nlàm từ vải\npolyester 210T chống nước\nhai lớp, bảo vệ bạn khỏi sương đêm và độ ẩm.\nLớp lót bên trong\nlà vải\npolyester 210T mềm mại\n, mang lại cảm giác thoải mái khi sử dụng.\nLớp ruột\nđược lấp đầy bằng\nbông rỗng cao cấp (Premium Hollow Cotton)\n, giúp giữ nhiệt hiệu quả mà vẫn đảm bảo trọng lượng nhẹ.\nKích thước thoải mái:\nTúi ngủ có kích thước\n190 cm\n(chiều dài thân) +\n30 cm\n(chiều dài mũ) x\n75 cm\n(chiều rộng), phù hợp với hầu hết người dùng, mang lại không gian thoải mái để nghỉ ngơi.\nMàu sắc đa dạng:\nSản phẩm có nhiều lựa chọn màu sắc, bao gồm xám, cam và xanh lam, giúp bạn dễ dàng chọn lựa màu sắc yêu thích.\nTúi ngủ siêu nhẹ Gothiar Sleeping Bag LW180 GT250001\nlà một sản phẩm chất lượng cao, đã được chứng nhận đạt tiêu chuẩn (\"Qualified\"), đảm bảo độ bền và hiệu quả sử dụng.",
+  "link_nguon": "https://wetrek.vn/san-pham/tui-ngu-sieu-nhe-gothiar-sleeping-bag-lw180-gt250001.htm",
+  "variants": [
+   {
+    "ma_bien_the": "TUINGU05_CAM",
+    "ma_sp": "TUINGU05",
+    "mau_sac": "Cam",
+    "gia_goc": 585000,
+    "link_anh": "https://wetrek.vn/pic/products/green_with_1-8lbs-01_1800x1800_638925818237344169.jpg;https://wetrek.vn/pic/products/lightweightsleepingbag_1_117b880d-389e-484c-b569-d_638925818237344169.jpg;https://wetrek.vn/pic/products/z6507209099224_ef13bd747b9784ff1bb13ae0081028ce_638925818237500401.jpg"
+   },
+   {
+    "ma_bien_the": "TUINGU05_GHI",
+    "ma_sp": "TUINGU05",
+    "mau_sac": "Ghi",
+    "gia_goc": 585000,
+    "link_anh": "https://wetrek.vn/pic/products/green_with_1-8lbs-04_638925818366562143.jpg;https://wetrek.vn/pic/products/green_with_1-8lbs-05_638925818366718445.jpg;https://wetrek.vn/pic/products/lightweightsleepingbag_1_117b880d-389e-484c-bf569-_638925818366718445.jpg"
+   },
+   {
+    "ma_bien_the": "TUINGU05_XANH_DUONG",
+    "ma_sp": "TUINGU05",
+    "mau_sac": "Xanh dương",
+    "gia_goc": 585000,
+    "link_anh": "https://wetrek.vn/pic/products/green_with_1-8lbs-02_638925818479373881.jpg;https://wetrek.vn/pic/products/green_with_1-8lbs-03_638925818479373881.jpg;https://wetrek.vn/pic/products/z6507209099224_eff13bd747b9784ff1bb13ae0081028ce_638925818479373881.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "TUINGU06",
+  "ten_sp": "Túi ngủ Ryder Envelope Sleeping Bag D1001 Orange - 7482",
+  "danh_muc": "Túi ngủ",
+  "thong_so": "Kích thước thực tế: 190x75cm; Kích thước đóng gói: 26x18cm; Trọng lượng (grams): 1,2 kg",
+  "mo_ta": "Ryder\nlà một thương hiệu outdoor nổi tiếng thuộc sở hữu của tập đoàn Ryder. Được thành lập vào năm 2009, Ryder chuyên cung cấp các trang thiết bị cho hoạt động ngoài trời, phục vụ các thị trường cao cấp trên thế giới. Các sản phẩm nổi bật của Ryder bao gồm: lều, túi ngủ, ba lô, gậy leo núi, bếp dã ngoại, túi khô, nệm, ... được xuất khẩu sang các nước Bắc Mỹ, Châu Âu, Nhật Bản và nhiều quốc gia, khu vực khác được sản xuất theo yêu cầu tiêu chuẩn như CE, FDA. Cho đến nay, thương hiệu Ryder đã trở thành một thương hiệu danh tiếng với sự đánh giá cao từ khách hàng toàn cầu.\nTúi ngủ Ryder Envelope Sleeping Bag D1001 Orange - 7482\nlà một trong những sản phẩm chính hãng được dân du lịch cũng như dân văn phòng Việt Nam yêu thích, tin dùng cho những chuyến đi dài ngày cũng như những giấc nghỉ trưa trong thời tiết se lạnh.\n- Chất liệu:\nVỏ ngoài của Túi ngủ Ryder D1001 được dệt từ polyester 190T với các đặc tính ưu việt như dẻo dai bền sợi, trọng lượng nhẹ, chịu mài mòn tốt, chịu ít ảnh hưởng của độ ẩm.\nMặt trong của túi được dệt từ tơ polyester mềm mại, an toàn cho da, giữ ấm tốt.\nLõi túi làm từ bông T/C mật độ 250g/m².\n- Thiết kế:\nTúi ngủ không có mũ, đáy vuông.\nKhóa dọc thân, có thể ghép 2 túi lại để sử dụng như túi ngủ đôi.\nTrong túi có túi nhỏ để đồ cá nhân tiện lợi\nMàu sắc tươi sáng, rực rỡ, phù hợp với các hoạt động du lịch dã ngoại.\nSử dụng túi ngủ tại nhiệt độ thoải mái nhất là 15 độ C, nhiệt độ tối thiểu là 5 độ C.\nKích thước: 190 x 75 cm\nTrọng lượng: 1,2 kg\n(Có thể mở khóa dùng làm chân đắp)\n(Hoặc ghép 2 lại thành 1 túi ngủ đôi)\n(Gấp lại gọn gàng trong túi đựng)",
+  "link_nguon": "https://wetrek.vn/san-pham/tui-ngu-ryder-envelope-sleeping-bag-d1001-orange-7482.htm",
+  "variants": [
+   {
+    "ma_bien_the": "TUINGU06_MACDINH",
+    "ma_sp": "TUINGU06",
+    "mau_sac": "",
+    "gia_goc": 659000,
+    "link_anh": "https://wetrek.vn/pic/products/Tui-ngu-Ryder-Envelope-Sleeping-Bag-D1001-Orange-7482_HasThumb.jpg;https://wetrek.vn/pic/products/11251_636074856535180967_HasThumb.jpg;https://wetrek.vn/pic/products/11251_636074856545476985_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "TUINGU07",
+  "ten_sp": "Túi ngủ Ryder Envelope Sleeping Bag D1002 Orange - 7483",
+  "danh_muc": "Túi ngủ",
+  "thong_so": "Kích thước thực tế: 190 (+30) x 75cm; Kích thước đóng gói: 26x19cm; Trọng lượng (grams): 1,3 kg",
+  "mo_ta": "Ryder\nlà một thương hiệu outdoor nổi tiếng thuộc sở hữu của tập đoàn Ryder. Được thành lập vào năm 2009, Ryder chuyên cung cấp các trang thiết bị cho hoạt động ngoài trời, phục vụ các thị trường cao cấp trên thế giới. Các sản phẩm nổi bật của Ryder bao gồm: lều, túi ngủ, ba lô, gậy leo núi, bếp dã ngoại, túi khô, nệm, ... được xuất khẩu sang các nước Bắc Mỹ, Châu Âu, Nhật Bản và nhiều quốc gia, khu vực khác được sản xuất theo yêu cầu tiêu chuẩn như CE, FDA. Cho đến nay, thương hiệu Ryder đã trở thành một thương hiệu danh tiếng với sự đánh giá cao từ khách hàng toàn cầu.\nTúi ngủ Ryder Envelope Sleeping Bag D1002 Orange - 7483\nđược làm từ chất liệu polyester chống thấm nước, có độ bền, dai và dễ dàng vệ sinh.\n- Chất liệu:\nVỏ ngoài của Túi ngủ Ryder D1002 được dệt từ polyester 190T với các đặc tính ưu việt như dẻo dai bền sợi, trọng lượng nhẹ, chịu mài mòn tốt, chịu ít ảnh hưởng của độ ẩm.\nMặt trong của túi được dệt từ tơ polyester mềm mại, an toàn cho da, giữ ấm tốt.\nLõi túi làm từ bông T/C mật độ 250g/m².\n- Thiết kế:\nTúi ngủ D1002 thiết kế có mũ giúp ngủ thoải mái hơn, giúp người dùng giữ nhiệt tốt hơn\nHệ thống khóa 2 mặt dọc thân túi, có thể ghép 1 túi khóa sườn trái với 1 túi khóa sườn phải để tạo thành túi ngủ đôi có mũ dành cho 2 người sử dụng thoải mái\nTrong túi có túi nhỏ để đồ cá nhân tiện lợi\nNhiệt độ trung bình 15ºC, nhiệt độ tối đa 5ºC.\nKích thước: 190 (+30) x 75 cm\nTrọng lượng: 1,3 kg",
+  "link_nguon": "https://wetrek.vn/san-pham/tui-ngu-ryder-envelope-sleeping-bag-d1002-orange-7483.htm",
+  "variants": [
+   {
+    "ma_bien_the": "TUINGU07_MACDINH",
+    "ma_sp": "TUINGU07",
+    "mau_sac": "",
+    "gia_goc": 789000,
+    "link_anh": "https://wetrek.vn/pic/products/Tui-ngu-Ryder-Envelope-Sleeping-Bag-D1002-Orange-7483_HasThumb.jpg;https://wetrek.vn/pic/products/11252_636074863228840724_HasThumb.jpg;https://wetrek.vn/pic/products/11252_636074863259572778_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "TUINGU08",
+  "ten_sp": "Túi ngủ nỉ Northpeak Sleeping Bag - 7855",
+  "danh_muc": "Túi ngủ",
+  "thong_so": "Kích thước túi ngủ: 210 x 75 cm; Kích thước gấp gọn: 30 x 20 cm",
+  "mo_ta": "Túi ngủ\nlà một trong những trang bị thiết yếu đối với bất kỳ hoạt động ngoài trời nào như đi leo núi, du lịch, cắm trại, dã ngoại… Những ngày cuối tuần hay những dịp nghỉ lễ, tết dài là thời điểm mọi người tranh thủ đi du lịch, khám phá các vùng đất của Tổ quốc như các địa điểm phía Bắc như Mộc Châu, Hà Giang, SaPa, Lào Cai, Fansipan… Những nơi có nhiệt độ ban đêm thấp, trang bị theo một chiếc túi ngủ là điều cần thiết. Túi ngủ không chỉ giúp giữ ấm cơ thể, mà còn tránh côn trùng, động vật gây hại, giúp bạn có một giấc ngủ ngon.\nWETREK\nxin giới thiệu sản phẩm:\nTúi ngủ nỉ Northpeak Sleeping Bag - 7855\nTúi ngủ được dệt từ vải nỉ với những đặc tính ưu việt như bền, trọng lượng nhẹ, chịu mài mòn tốt và ít chịu ảnh hưởng của độ ẩm.\nThiết kế hình chữ nhật, có mũ và khóa kéo tiện lợi.\nKích thước túi ngủ: 210 x 75 cm\nKích thước gấp gọn: 30 x 20 cm\nMàu sắc: Ghi xám/Đen/Đỏ\nNhiệt độ sử dụng: 10 - 25ºC\nThích hợp sử dụng khi đi du lịch, cắm trại.",
+  "link_nguon": "https://wetrek.vn/san-pham/tui-ngu-ni-northpeak-sleeping-bag-7855.htm",
+  "variants": [
+   {
+    "ma_bien_the": "TUINGU08_MACDINH",
+    "ma_sp": "TUINGU08",
+    "mau_sac": "",
+    "gia_goc": 399000,
+    "link_anh": "https://wetrek.vn/pic/products/Tui-ngu-ni-Northpeak-Sleeping-Bag-7855_HasThumb.JPG"
+   }
+  ]
+ },
+ {
+  "ma_sp": "SUP01",
+  "ten_sp": "Ván chèo đứng bơm hơi Aqua Marina Champion Windsurf SUP BT-S300 - 6215",
+  "danh_muc": "SUP",
+  "thong_so": "Kích thước: Ván: 300 x 75 x 15 cm, Cánh buồm: 3.0 m² (Mép ngoài: 300 cm), Cột buồm: 300 cm, Sào buồm: 132 cm; Trọng lượng: 10.7 kg; Tải trọng tối đa: 120 kg",
+  "mo_ta": "AQUA MARINA\nlà một thương hiệu chuyên sản xuất các loại\nthuyền thể thao\n,\nthuyền bơm hơi\n,\nván chèo đứng SUP\n, phụ kiện thuyền như bơm, mái chèo, túi khô. Được thành lập vào năm 2002, Aqua Marina đã chiếm thị phần lớn trong thị trường thuyền và ván chèo đứng bơm hơi toàn cầu bằng việc cung cấp các sản phẩm đa dạng, chất lượng cao, với giá cả phải chăng.\nVán chèo đứng SUP bơm hơi Aqua Marina Champion\nlà dòng ván chèo đứng ổn định, linh hoạt, sử dụng cho cả hoạt động chèo ván đứng và lướt ván buồm. Sản phẩm phụ hợp cho những người ưa chuộng sự gọn nhẹ, đa dụng. Thiết kế thân ván rộng và ngắn phù hợp cho những người lần đầu chơi môn thể thao này bởi độ ổn định, cân bằng tốt và vô cùng dễ điều khiển.\nThân ván dày 15cm với chất liệu PVC sử dụng công nghệ drop-stitch vách đúp siêu bền.\nThiết kế cong cân bằng và mềm mại.\nVây: 1 vây chính giữa đuôi ván, 2 vây bên. 1 xiếm giữa (50 cm) ván hỗ trợ ván khi sử dụng buồm.\nMặt ván: phủ mút xốp EVA với bề mặt chống trơn trượt.\nNhiều vị trí đặt chân với dây đai cố định\nDây bungee đàn hồi để chằng đồ.\nTối ưu áp suất khí trong mọi điều kiện, lên tới 15psi\nBuồm Aqua Marina Champion Rig\nđược thiết kế thân thiện, có trọng lượng nhẹ và dễ lắp ráp. Buồm gọn khi tháo rời, vận chuyển dễ dàng.\nCánh buồm: vải buồm Dacron® bền với chất liệu Monofilm (Vải buồm X-ply toàn bộ) và 1 ván lót.\nCột buồm: 4 khúc bằng nhau, chất liệu Composite RDM.\nSào buồm: 3 khúc, có thể điều chỉnh được.\nDây kéo buồm\nĐế buồm cố định với 1 chốt.\nTúi đựng: giữ toàn bộ buồm trong một túi đựng gọn nhẹ, dễ dàng vận chuyển.\nCẤU TRÚC DROP-STITCH SIÊU BỀN\nCấu trúc drop-stitch bao gồm 2 lớp vật liệu có bề mặt được kết nối với nhau bởi hàng ngàn sợi polyester dày đặc, nhỏ nhưng siêu chắc chắn, cho phép ván có thể giữ đúng hình dáng khi được bơm tới áp suất cao (trên 15 PSI), kết hợp cùng với hai bên thành ván bằng vải nhựa PVC 500D (denier - đơn vị đo độ dày vải), tạo nên một cấu trúc tổng thể bền vững.\nTHẢM XỐP EVA CHỐNG TRƯỢT\nHầu hết các thảm trải ván chèo đứng được làm bằng EVA (ethylene acetate vinyl), thường được biết đến nhiều như là cao su xốp, là loại chất liệu nhẹ, không độc hại và quan trọng nhất là chống nước, được sử dụng rộng rãi, dễ dàng cắt theo khuôn. Các tấm thảm loại này thường được thiết kế với đường rảnh nhỏ trên bề mặt, giúp tạo độ bám cho đôi chân khi chèo ván chèo đứng.\nHỆ THỐNG VÂY ĐIỀU HƯỚNG\nHệ thống vây điều hướng là một phần vô cùng cần thiết của ván chèo đứng, hỗ trợ điều hướng và tăng tính ổn định cho ván chèo đứng khi di chuyển, nếu không có vây điều hướng người dùng sẽ khó lòng điều khiển ván chèo đi đúng hướng. Tùy theo kích thước ván chèo và mục đích sử dụng người dùng để lựa chọn các kiểu vây điều hướng cho phù hợp.",
+  "link_nguon": "https://wetrek.vn/san-pham/van-cheo-dung-sup-bom-hoi-aqua-marina-champion-bt-s300-6215.htm",
+  "variants": [
+   {
+    "ma_bien_the": "SUP01_MACDINH",
+    "ma_sp": "SUP01",
+    "mau_sac": "",
+    "gia_goc": 25950000,
+    "link_anh": "https://wetrek.vn/pic/products/Van-cheo-dung-SUP-bom-hoi-Aqua-Marina-Champion-BT-S300-6215_HasThumb.jpg;https://wetrek.vn/pic/products/8340_635883633511946908_HasThumb.jpg;https://wetrek.vn/pic/products/8340_635883633523022927_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "SUP02",
+  "ten_sp": "Ván chèo đứng bơm hơi Aqua Marina TRITON BT-19TRP – 8360",
+  "danh_muc": "SUP",
+  "thong_so": "Kích thước: 340 x 81 x 15 cm; Trọng lượng: 9.7 kg; Tải trọng tối đa: 150 kg",
+  "mo_ta": "Aqua Marina\nlà một thương hiệu chuyên sản xuất các loại thuyền thể thao, thuyền bơm hơi, ván chèo đứng SUP, phụ kiện thuyền như bơm, mái chèo, túi khô. Được thành lập vào năm 2002,\nAqua Marina\nđã chiếm thị phần lớn trong thị trường thuyền và ván chèo đứng bơm hơi toàn cầu bằng việc cung cấp các sản phẩm đa dạng, chất lượng cao, với giá cả phải chăng.\nWETREK\nlựa chọn và mang đến bạn sản phẩm\nVán chèo đứng bơm hơi Aqua Marina TRITON BT-19TRP - 8360\nVán chèo đứng bơm hơi Aqua Marina TRITON BT-19TRP- 8360\nlà một trong những sản phẩm\nSUP\ndòng\nAdv.All Around\nmới được nâng cấp trong năm nay với nhiều chi tiết được nâng cấp hiệu quả so với các dòng sản phẩm thế hệ trước như về độ dày được tối ưu cùng với độ cứng vượt trội mà không cần áp suất không khí bổ sung, sẽ giúp cho việc giữ thăng bằng và khả năng lượn sóng được cơ động, an toàn hơn.\nNhững đặc điểm nổi bật của dòng sản\nVán chèo đứng bơm hơi Aqua Marina TRITON BT-19TRP\n- 8360\n:\nĐược sản xuất với công nghệ Drop Stitch bao gồm 2 lớp vật liệu có bề mặt được kết nối với nhau bởi hàng ngàn sợi polyester dày đặc, nhỏ nhưng siêu chắc chắn, cho phép ván có thể giữ đúng hình dáng khi được bơm tới áp suất cao (trên 15 PSI), kết hợp cùng với hai bên thành ván bằng vải nhựa PVC 500D (denier - đơn vị đo độ dày vải), tạo nên một cấu trúc tổng thể bền vững.\nThiết kế màu sắc sáng bắt mắt\nCơ chế có thể gấp gọn tiện lợi, dễ dàng khi di chuyển\nVòng chữ D bằng thép không gỉ ở đuôi ván cho phép gắn phụ kiện dây buộc chân, tránh ván bị văng xa khi ngã khỏi ván.\nDây bungee đàn hồi để chằng đồ.\nBơm tay được cấu tạo với cơ chế Double Action Pump cho khả năng bơm được nhanh hơn và dễ dàng hơn.",
+  "link_nguon": "https://wetrek.vn/san-pham/van-cheo-dung-bom-hoi-aqua-marina-triton-bt-19trp-8360.htm",
+  "variants": [
+   {
+    "ma_bien_the": "SUP02_MACDINH",
+    "ma_sp": "SUP02",
+    "mau_sac": "",
+    "gia_goc": 11690000,
+    "link_anh": "https://wetrek.vn/pic/products/Van-cheo-dung-bom-hoi-Aqua-Marina-TRITON-BT-19TRP-8360_HasThumb.jpg;https://wetrek.vn/pic/products/17045_636755438088793018_HasThumb.jpg;https://wetrek.vn/pic/products/17045_636755438099557037_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "SUP03",
+  "ten_sp": "Ván chèo đứng bơm hơi Aqua Marina SUP DHYANA BT-19DHP",
+  "danh_muc": "SUP",
+  "thong_so": "Kích thước: 336 x 91 x 12 cm; Kích thước sau đóng gói: 44 x 27 x 95 cm; Trọng lượng: 10 kg; Tải trọng tối đa: 120 kg",
+  "mo_ta": "Aqua Marina là một thương hiệu chuyên sản xuất các loại thuyền thể thao, thuyền bơm hơi, ván chèo đứng SUP, phụ kiện thuyền như bơm, mái chèo, túi khô. Được thành lập vào năm 2002, Aqua Marina đã chiếm thị phần lớn trong thị trường thuyền và ván chèo đứng bơm hơi toàn cầu bằng việc cung cấp các sản phẩm đa dạng, chất lượng cao, với giá cả phải chăng.\nWETREK\nlựa chọn và mang đến bạn sản phẩm\nVán chèo đứng bơm hơi Aqua Marina DHYANA BT-19DHP – 8366\nKhi bạn đã hoàn thành buổi tập Yoga của mình tại các phòng tập, nó cũng là trải nghiệm tuyệt vời khi bạn đứng trên ván nước và thực hiện các bài tập đó. Vậy tại sao bạn không mang buổi tập tiếp theo của bạn xuống nước ?\nVán chèo đứng bơm hơi Aqua Marina DHYANA BT-19DHP – 8366\nđược\nAqua Marina\nmang đến dành cho các tín đồ YOGA. Với bề mặt ván rộng rãi và cấu tạo cứng từ công nghệ hai lớp, giúp cho\nDHYANA BT-19DHP\ntrở thành một “thảm tập” Yoga hoàn hảo trên mặt nước.\nNhững đặc điểm nổi bật của dòng sản phẩm\nVán chèo đứng bơm hơi Aqua Marina DHYANA BT-19DHP – 8366\n:\nĐược sản xuất với công nghệ Drop Stitch bao gồm 2 lớp vật liệu có bề mặt được kết nối với nhau bởi hàng ngàn sợi polyester dày đặc, nhỏ nhưng siêu chắc chắn, cho phép ván có thể giữ đúng hình dáng khi được bơm tới áp suất cao (trên 15 PSI), kết hợp cùng với hai bên thành ván bằng vải nhựa PVC 500D (denier - đơn vị đo độ dày vải), tạo nên một cấu trúc tổng thể bền vững.\nThiết kế màu sắc sáng nhẹn nhàng hiện đại\nCơ chế có thể gấp gọn tiện lợi, dễ dàng khi di chuyển\nVòng chữ D bằng thép không gỉ ở đuôi ván cho phép gắn phụ kiện dây buộc chân, tránh ván bị văng xa khi ngã khỏi ván.\nDây bungee đàn hồi để chằng đồ.\nBơm tay được cấu tạo với cơ chế Double Action Pump cho khả năng bơm được nhanh hơn và dễ dàng hơn.",
+  "link_nguon": "https://wetrek.vn/san-pham/van-cheo-dung-bom-hoi-aqua-marina-dhyana-bt-19dhp-8366.htm",
+  "variants": [
+   {
+    "ma_bien_the": "SUP03_MACDINH",
+    "ma_sp": "SUP03",
+    "mau_sac": "",
+    "gia_goc": 12990000,
+    "link_anh": "https://wetrek.vn/pic/products/Van-cheo-dung-bom-hoi-Aqua-Marina-DHYANA-BT-19DHP-8366_HasThumb.jpg;https://wetrek.vn/pic/products/17074_636758841622899010_HasThumb.jpg;https://wetrek.vn/pic/products/17074_636758841633351028_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "SUP04",
+  "ten_sp": "Ván bơm hơi Aqua Marina Island Air Platform BT-I250 - 6255",
+  "danh_muc": "SUP",
+  "thong_so": "Sức chứa: 3+1; Tải trọng tối đa: 265 kg; Kích thước: 250 x 160 x 15 cm; Trọng lượng: 12.8 kg",
+  "mo_ta": "AQUA MARINA\nlà một thương hiệu chuyên sản xuất các loại\nthuyền thể thao\n,\nthuyền bơm hơi\n,\nván chèo đứng SUP\n, phụ kiện thuyền như bơm, mái chèo, túi khô. Được thành lập vào năm 2002, Aqua Marina đã chiếm thị phần lớn trong thị trường thuyền và ván chèo đứng bơm hơi toàn cầu bằng việc cung cấp các sản phẩm đa dạng, chất lượng cao, với giá cả phải chăng.\nVán bơm hơi Aqua Marina Island Air Platform BT-I250\ntạo nên một \"hòn đảo\" hoàn hảo cho việc bơi lội, chơi đùa hoặc đơn giản là nằm dài thư giãn. Ván linh hoạt, cân đối giữa kiếu dáng, hiệu năng và giá trị sử dụng. Được chế tạo bằng chất liệu PVC, công nghệ lõi Drop-stitch Hàn Quốc giúp ván cứng và siêu bền, thiết kế với các móc nối bằng thép không gỉ, dây nối thuận tiện, có thể gắn nhiều ván bơm hơi lại với nhau.\nThân ván dày 15cm với chất liệu PVC sử dụng công nghệ drop-stitch vách đúp siêu bền\nDải bao quanh ván có độ bền cao giúp tăng độ cứng của ván\nĐược xử lý chống tia UV cao, giảm hư hại do tia tử ngoại\nCó tay xách tiện lợi\nVừa thoải mái cho 3+1 người sử dụng\nCác móc nối bằng thép không gỉ, dây nối thuận tiện, có thể gắn nhiều ván bơm hơi lại với nhau\nTối ưu áp suất khí trong mọi điều kiện, lên tới 8psi",
+  "link_nguon": "https://wetrek.vn/san-pham/van-bom-hoi-aqua-marina-island-bt-i250-6255.htm",
+  "variants": [
+   {
+    "ma_bien_the": "SUP04_MACDINH",
+    "ma_sp": "SUP04",
+    "mau_sac": "",
+    "gia_goc": 9950000,
+    "link_anh": "https://wetrek.vn/pic/products/Van-bom-hoi-Aqua-Marina-Island-BT-I250-6255_HasThumb.jpg;https://wetrek.vn/pic/products/8594_635902806373227490_HasThumb.jpg;https://wetrek.vn/pic/products/8594_635902806382743506_HasThumb.JPG"
+   }
+  ]
+ },
+ {
+  "ma_sp": "SUP05",
+  "ten_sp": "Ván chèo đứng bơm hơi tập Yoga Aqua Marina FLOW SUP BT-88877 - 4048",
+  "danh_muc": "SUP",
+  "thong_so": "Kích thước: 300 x 81 x 15 cm; Trọng lượng: 9 kg; Tải trọng tối đa: 120kg",
+  "mo_ta": "AQUA MARINA\nlà một thương hiệu chuyên sản xuất các loại\nthuyền thể thao\n,\nthuyền bơm hơi\n,\nván chèo đứng SUP\n, phụ kiện thuyền như bơm, mái chèo, túi khô. Được thành lập vào năm 2002, Aqua Marina đã chiếm thị phần lớn trong thị trường thuyền và ván chèo đứng bơm hơi toàn cầu bằng việc cung cấp các sản phẩm đa dạng, chất lượng cao, với giá cả phải chăng.\nVới xu hướng ngày càng nhiều những tín đồ của bộ môn Yoga chuyển hình thức tập từ Yoga trên bờ sang Yoga trên mặt nước, trên bãi biển, ...\nVán chèo đứng bơm hơi Aqua Marina FLOW\nđã ra đời. Ván được thiết kể phẳng ở mũi và đuôi ván, độ dày 15cm, đem lại độ ổn định tốt hơn, làm hài lòng những Yogi khó tính nhất, giúp bạn thực hiện được mọi tư thế yoga, cảm nhận được sự thư thái, bềnh bồng trên mặt nước yên ả.\nVán được thiết kế với bề mặt phẳng và 2 đầu ván bằng cho sự ổn định để thực hiện các bài\ntập yoga\nngay trên mặt nước\nĐộ dày ván 15cm và bộ vây 3 bên dưới giúp tăng tính ổn định và đảm bảo an toàn khi tập yoga trên ván\nVán làm bằng nhựa PVC rất bền, chịu va đâp, chịu mài mòn tốt, hạn chế sự xâm nhập mặn\nDễ dàng bơm hơi, van hơi và các đường may dập nhiệt rất kín, đảm bảo không bị rò rỉ khí\nÁp lực khí tối ưu trong mọi điều kiện lên tới\n20 psi\nKích thước: 297 x 81 x 15 cm\nTrọng tải: 120kg\nBề mặt phẳng, ổn định\nBộ 3 vây tăng tính ổn định\nDễ dàng bơm hơi\nGấp lại nhỏ gọn\nGIỚI THIỆU CÔNG NGHỆ ISUP DROP-STITCH - INFLATABLE SUP DROP-STITCH TECHNOLOGY\nCác sản phẩm\nván chèo đứng SUP bơm hơi\ncủa Aqua Marina được cấu tạo từ vật liệu có cấu trúc\ndrop-stitch\nsiêu bền, với lớp phủ PVC chống trầy xước, chống tia UV.\nCấu trúc\ndrop-stitch\nbao gồm 2 lớp vật liệu có bề mặt được kết nối với nhau bởi hàng ngàn sợi polyester dày đặc, nhỏ nhưng siêu chắc chắn, cho phép ván có thể giữ đúng hình dáng khi được bơm tới\náp suất cao\n(trên 15 PSI), kết hợp cùng với hai bên thành ván bằng vải nhựa PVC 500D (denier - đơn vị đo độ dày vải), tạo nên một cấu trúc tổng thể bền vững.",
+  "link_nguon": "https://wetrek.vn/san-pham/van-cheo-dung-bom-hoi-aqua-marina-flow.htm",
+  "variants": [
+   {
+    "ma_bien_the": "SUP05_MACDINH",
+    "ma_sp": "SUP05",
+    "mau_sac": "",
+    "gia_goc": 12990000,
+    "link_anh": "https://wetrek.vn/pic/products/Van-cheo-dung-bom-hoi-Aqua-Marina-FLOW_HasThumb.jpg;https://wetrek.vn/pic/products/4861_635627278139212536.jpg;https://wetrek.vn/pic/products/4861_635627278144702850.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "SUP06",
+  "ten_sp": "Ván chèo đứng bơm hơi cho trẻ em Aqua Marina VIBRANT BT19VIP – 8368",
+  "danh_muc": "SUP",
+  "thong_so": "Kích thước: 244 x 71 x 10 cm; Trọng lượng: 5.7 kg; Trọng lượng tối đa: 60 kg",
+  "mo_ta": "Aqua Marina\nlà một thương hiệu chuyên sản xuất các loại thuyền thể thao, thuyền bơm hơi, ván chèo đứng\nSUP\n, phụ kiện thuyền như bơm, mái chèo, túi khô. Được thành lập vào năm 2002,\nAqua Marina\nđã chiếm thị phần lớn trong thị trường thuyền và ván chèo đứng bơm hơi toàn cầu bằng việc cung cấp các sản phẩm đa dạng, chất lượng cao, với giá cả phải chăng.\nWETREK.VN\nlựa chọn và mang đến bạn sản phẩm\nVán Chèo Đứng Bơm Hơi Cho Trẻ Em Aqua Marina VIBRANT BT19VIP – 8368\nVán Chèo Đứng Bơm Hơi Cho Trẻ Em Aqua Marina VIBRANT BT19VIP – 8368\nđược\nAqua Marina\nsản xuất nhắm đến đối tượng sử dụng là các bạn trẻ nhỏ, đặc biệt được cấu tạo cùng công nghệ chất liệu giống với các sản phẩm\nSUP\nphiên bản standard cho người lớn nhưng có thiết kế nhỏ hơn, trọng lượng nhẹ hơn, dễ dàng điều khiển.\nNhững đặc điểm nổi bật của dòng sản phẩm\nVán chèo đứng bơm hơi cho trẻ em Aqua Marina VIBRANT BT19VIP – 8368:\nĐược sản xuất với công nghệ Drop Stitch bao gồm 2 lớp vật liệu có bề mặt được kết nối với nhau bởi hàng ngàn sợi polyester dày đặc, nhỏ nhưng siêu chắc chắn, cho phép ván có thể giữ đúng hình dáng khi được bơm tới áp suất cao (trên 15 PSI), kết hợp cùng với hai bên thành ván bằng vải nhựa PVC 500D (denier - đơn vị đo độ dày vải), tạo nên một cấu trúc tổng thể bền vững.\nThiết kế nhẹ và nhỏ gọn phù hợp cho các ‘’tay đua’’ nhỏ\nThiết kế màu sắc sáng bắt mắt\nCơ chế có thể gấp gọn tiện lợi, dễ dàng khi di chuyển\nVòng chữ D bằng thép không gỉ ở đuôi ván cho phép gắn phụ kiện dây buộc chân, tránh ván bị văng xa khi ngã khỏi ván.\nDây bungee đàn hồi để chằng đồ.\nBơm tay được cấu tạo với cơ chế Double Action Pump cho khả năng bơm được nhanh hơn và dễ dàng hơn.",
+  "link_nguon": "https://wetrek.vn/san-pham/van-cheo-dung-bom-hoi-cho-tre-em-aqua-marina-vibrant-bt19vip-8368.htm",
+  "variants": [
+   {
+    "ma_bien_the": "SUP06_MACDINH",
+    "ma_sp": "SUP06",
+    "mau_sac": "",
+    "gia_goc": 7990000,
+    "link_anh": "https://wetrek.vn/pic/products/Van-cheo-dung-bom-hoi-cho-tre-em-Aqua-Marina-VIBRANT-BT19VIP-8368_HasThumb.jpg;https://wetrek.vn/pic/products/17077_636758893907014842_HasThumb.jpg;https://wetrek.vn/pic/products/17077_636758893917310860_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "BEP01",
+  "ten_sp": "Bếp ga gấp gọn Snowline Plate Stove II SN75UGG006",
+  "danh_muc": "Bếp và dụng cụ ăn uống",
+  "thong_so": "Kích thước: 35 x 25 x 13.5 cm (khi sử dụng), 42 x 30 x 9 cm (khi cất giữ); Trọng lượng: 3.6 kg (không bao gồm hộp đựng)",
+  "mo_ta": "Bếp ga gấp gọn Snowline Plate Stove II SN75UGG006\nlà sự lựa chọn hoàn hảo cho những chuyến cắm trại và dã ngoại. Với thiết kế nhỏ gọn, hiện đại cùng nhiều tính năng ưu việt, chiếc bếp này mang đến trải nghiệm nấu nướng tiện lợi và an toàn.\nChất liệu cao cấp:\nThân bếp và giá đỡ nồi được làm hoàn toàn bằng\nthép không gỉ\n, giúp chống ăn mòn hiệu quả và dễ dàng vệ sinh sau mỗi lần sử dụng.\nHệ thống đốt hóa lỏng (Liquide Injection):\nBếp duy trì ngọn lửa\nổn định\nngay cả trong điều kiện nhiệt độ thấp, đảm bảo hiệu suất đun nấu tối ưu.\nThiết kế thông minh:\nBếp có thể\nkết hợp dễ dàng với bàn IGT\n, tạo thành một hệ thống bếp nấu gọn gàng và chuyên nghiệp. Núm vặn tiện lợi trên mặt bếp giúp bạn\nđánh lửa và điều chỉnh lửa\nmột cách nhanh chóng.\nLắp đặt dễ dàng:\nTính năng\nlắp bình gas một chạm\ncho phép bạn kết nối bình gas bên dưới bếp một cách đơn giản, tiện lợi khi sử dụng cùng bàn IGT.\nBếp ga gấp gọn Snowline Plate Stove II SN75UGG006\nkhông chỉ là một thiết bị nấu nướng thông thường, mà còn là người bạn đồng hành đáng tin cậy, mang đến những bữa ăn ấm cúng và trọn vẹn niềm vui cho những chuyến đi của bạn. Hãy sở hữu ngay để tận hưởng trọn vẹn những khoảnh khắc đáng nhớ bên gia đình và bạn bè!",
+  "link_nguon": "https://wetrek.vn/san-pham/bep-ga-gap-gon-snowline-plate-stove-ii-sn75ugg006.htm",
+  "variants": [
+   {
+    "ma_bien_the": "BEP01_MACDINH",
+    "ma_sp": "BEP01",
+    "mau_sac": "",
+    "gia_goc": 2650000,
+    "link_anh": "https://wetrek.vn/pic/products/7609d997c079c96b110392fe5248c024_638919064860549978.jpg;https://wetrek.vn/pic/products/liquide_injection_platestove2-5_638919064860706399.jpg;https://wetrek.vn/pic/products/liquide_injection_platestove2-1_638919064860549978.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "BEP02",
+  "ten_sp": "Bộ dụng cụ ăn Coleman 2000007840",
+  "danh_muc": "Bếp và dụng cụ ăn uống",
+  "thong_so": "",
+  "mo_ta": "Wetrek - Bộ dụng cụ ăn 2000007840\nColeman\nlà hãng sản xuất\nđồ outdoor\nnổi tiếng trên thế giới đi lên từ các sản phẩm đèn chiếu sáng, đến nay Coleman đã có chỗ đứng vững chắc trên thị trường outdoor thế giới với nhiều sản phẩm phục vụ nhu cầu du lịch, dã ngoại, và các hoạt động ngoài trời của khách hàng.\nBộ dụng cụ ăn 2000007840\nlà một trang bị rất hữu ích cho bạn trong những buổi cắm trại, dã ngoại, outdoor... Sản phẩm bao gồm dao, thìa, nĩa được làm từ thép không gỉ, nhẹ và bền. Sau khi sử dụng dễ dàng làm sạch mà không bị bám mùi và có thể khóa chúng lại với nhau tránh rơi mất.\n​​​​​",
+  "link_nguon": "https://wetrek.vn/san-pham/bo-dung-cu-an-2000007840.htm",
+  "variants": [
+   {
+    "ma_bien_the": "BEP02_MACDINH",
+    "ma_sp": "BEP02",
+    "mau_sac": "",
+    "gia_goc": 192000,
+    "link_anh": "https://wetrek.vn/pic/products/dung-cu-a_635294441332908766_HasThumb.png;https://wetrek.vn/pic/products/dung-cu-a_635294443420388766_HasThumb.png"
+   }
+  ]
+ },
+ {
+  "ma_sp": "BEP03",
+  "ten_sp": "Bếp ga mini dã ngoại Fire-Maple Folding Gas Stove FMS-105 gấp gọn",
+  "danh_muc": "Bếp và dụng cụ ăn uống",
+  "thong_so": "Kích thước: Khi mở:, ǿ, 174×69,5mm, Khi đóng:, ǿ, 91,3×59,8mm; Trọng lượng: 237g",
+  "mo_ta": "Fire-Maple\nlà thương hiệu nổi tiếng, có trụ sở chính tại thành phố Hàng Châu, Trung Quốc, chuyên sản xuất bếp ga dã ngoại, dụng cụ nấu nướng khi cắm trại, bộ dụng cụ barbecue, dụng cụ ăn uống khi cắm trại. Tất cả các sản phẩm của thương hiệu này đều được chứng nhận ISO9001, CE và FDA. Với chiến lược kinh doanh là “sản phẩm chất lượng cao và giá cả phải chăng”,\nFire-Maple\nđã giành được niềm tin và sự ủng hộ không chỉ từ người dùng trong nước, mà còn từ người dùng nước ngoài như Mỹ, Đức, Nga, New Zealand… Là nhà sản xuất hàng đầu về sản phẩm nhà bếp di động,\nFire-Maple\nluôn mang đến cho khách hàng sản phẩm, dịch vụ tốt nhất.\nBếp ga mini dã ngoại Fire-Maple Folding Gas Stove FMS-105\nbắt đầu được sản xuất năm 2005, có thể sử dụng ở những nơi gồ ghề, chịu được tải trọng lớn, là sản phẩm vô cùng hữu ích cho những chuyến đi cắm trại, leo núi hay dã ngoại, cung cấp một giải pháp hoàn hảo cho việc đun nấu thay cho các phương pháp truyền thống như sử dụng củi hay than hết sức bất tiện và mất thời gian.\nVới chân đỡ nồi có thêm các chi tiết răng cưa, giúp giữ nồi chắc chắn, ổn định, không bị bấp bênh khi nấu nướng\nNúm điều chỉnh cho phép điều chỉnh độ lớn của lửa theo ý muốn của người dùng\nHệ thống đánh lửa điện cho phép đánh lửa dễ dàng\nThiết kế đĩa ga giúp nâng cao hiệu quả đun nóng và tiết kiệm nhiên liệu\nBếp có thể gấp gọn, tiết kiệm không gian chứa đồ đạc mang theo\nKhi gấp lại, bếp có kích thước rất nhỏ gọn\nCó thể kết hợp với\nTấm chắn gió bếp ga\nđể chắn gió khi nấu ăn ở ngoài trời.\nXem thêm sản phẩm\nBếp ga du lịch\ntại\nWETREK.VN",
+  "link_nguon": "https://wetrek.vn/san-pham/bep-ga-gap-fire-maple-folding-gas-stove-fms-105-7317.htm",
+  "variants": [
+   {
+    "ma_bien_the": "BEP03_MACDINH",
+    "ma_sp": "BEP03",
+    "mau_sac": "",
+    "gia_goc": 600000,
+    "link_anh": "https://wetrek.vn/pic/products/Bep-ga-gap-Fire-Maple-Folding-Gas-Stove-FMS-105-7317_HasThumb.jpg;https://www.youtube.com/watch?v=WBTe8vbAU6U;https://wetrek.vn/pic/products/10845_636038438882732216_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "BEP04",
+  "ten_sp": "Chảo chiên nướng dã ngoại Fire-Maple Grill Pan",
+  "danh_muc": "Bếp và dụng cụ ăn uống",
+  "thong_so": "Kích thước sử dụng: 43.8 x 34.3 x 4 cm; Trọng lượng: 660g",
+  "mo_ta": "Chảo chiên nướng Fire Maple Portable Grill Pan giúp bạn chiên, xào, rang, rán hiệu quả khi đi cắm trại, dã ngoại, đảm bảo cho bữa ăn thật ngon miệng.\nĐặc tính nổi bật:\nThiết kế rãnh dẫn dầu chuẩn cho beefsteak có ưu điểm lớn nhất là độ cứng, bền bỉ và chịu mài mòn, va đập tốt đáp ứng đầy đủ về an toàn vệ sinh thực phẩm.\nDẫn nhiệt bên trong lòng chảo, giúp cho lượng nhiệt và thời gian sôi của dầu khi chiên rán cũng được giữ lại lâu hơn.\nQuai treo gấp gọn không gỉ cường độ cao, thân hợp kim nhôm đạt chuẩn food grade.\nFire-Maple\nlà công ty chuyên sản xuất thiết bị cắm trại nổi tiếng thế giới, có trụ sở tại Vĩnh Khang, là một trong số các thành phố sản xuất công nghiệp lớn nhất của Trung Quốc. Các sản phẩm chính mang lại thành công cho thương hiệu Fire-Maple bao gồm bếp ga dã ngoại, xoong nồi dã ngoại, dụng cụ nướng BBQ, thiết bị làm bếp dã ngoại… Các sản phẩm của Fire-Maple đều đạt tiêu chuẩn ISO-9001, CE và chứng nhận của FDA. Với phương châm kinh doanh tạo ra các sản phẩm chất lượng cao với giá thành phải chăng, các sản phẩm của công ty được rất nhiều khách hàng tin dùng, không chỉ tại Trung Quốc mà còn ở các thị trường khó tính khác như Hoa Kì, CHLB Đức, Nga, New Zealand…",
+  "link_nguon": "https://wetrek.vn/san-pham/chao-chien-nuong-da-ngoai-fire-maple-grill-pan.htm",
+  "variants": [
+   {
+    "ma_bien_the": "BEP04_MACDINH",
+    "ma_sp": "BEP04",
+    "mau_sac": "",
+    "gia_goc": 900000,
+    "link_anh": "https://wetrek.vn/pic/products/99cbbd5e-3c3e-4f2c-bca0-fbf2f36e4040.jpg;https://wetrek.vn/pic/products/Chao-chie_637687474809466924_HasThumb.jpg;https://wetrek.vn/pic/products/Chao-chie_637687474845699749_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "BEP05",
+  "ten_sp": "Bếp nướng gấp gọn Campingmoon Folding Burning Fire MT-035-9773",
+  "danh_muc": "Bếp và dụng cụ ăn uống",
+  "thong_so": "Trọng lượng: 6.6kg; Kích thước vỉ nướng: 34*31.5cm; Kích thước mở rộng: 40.5*36.2*33 cm (DxRxC); Kích thước đóng gói: 45*44*6.5cm",
+  "mo_ta": "Bếp nướng gấp gọn Campingmoon Folding Burning Fire MT-035-9773\nbằng chất liệu inox cao cấp rất bền, chắc chắn và an toàn khi sử dụng. Độ cao của vỉ nướng có thể điều chỉnh tránh thức ăn cháy khi nướng.\nĐặc điểm nổi bật:\nChất liệu Inox 304 an toàn, bảo vệ môi trường và chịu được nhiệt độ cao.\nVỉ nướng có 3 nấc để điều chỉnh chiều cao tùy thuộc vào lượng than sử dụng, tránh cháy đồ nướng.\nThân lò gấp hình kim tự tháp ngược với 4 chân đế chắc chắn\nĐáy bếp thép không gỉ hứng tro giữ cho môi trường sạch sẽ, không để rớt tro ra bãi cỏ.\nGiới thiệu thương hiệu:\nCampingmoon\nđược thành lập vào năm 2011, cung cấp nhiều loại bếp nướng cắm trại và các sản phẩm phụ kiện.\nCampingmoon\nđược bán rộng rãi cho Nhật Bản, Hàn Quốc và Nam Á. \"Đơn giản nhưng đặc biệt\" là động lực cho mục tiêu theo đuổi của công ty để trở thành một công ty khác biệt. Đội ngũ R & D tận tâm với hơn 10 năm kinh nghiệm thiết kế và sản xuất luôn cố gắng cung cấp công cụ độc đáo và sáng tạo nhất cho cắm trại",
+  "link_nguon": "https://wetrek.vn/san-pham/bep-nuong-gap-gon-campingmoon-folding-burning-fire-mt-035-9773.htm",
+  "variants": [
+   {
+    "ma_bien_the": "BEP05_MACDINH",
+    "ma_sp": "BEP05",
+    "mau_sac": "",
+    "gia_goc": 1415000,
+    "link_anh": "https://wetrek.vn/pic/products/23060eaf-4014-4692-8a8a-6972fc4b8832.jpg;https://wetrek.vn/pic/products/Bep-nuong_637533923005754044_HasThumb.jpg;https://wetrek.vn/pic/products/Bep-nuong_637533923137274012_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "BEP06",
+  "ten_sp": "Bộ hộp đựng đồ ăn dã ngoại Pack´n Eat Kit Light My Fire",
+  "danh_muc": "Bếp và dụng cụ ăn uống",
+  "thong_so": "Kích thước: 194 x 194 x 65mm; Trọng lượng: 339g",
+  "mo_ta": "Bộ hộp đựng đồ ăn Pack´n Eat Kit Light My Fire cho 2 người. Mang theo một số đồ ăn, thức uống và bạn đã sẵn sàng chia sẽ bữa ăn với một người bạn.\nPack’nEat Kit cho hai người, xếp và đóng gói dễ dàng, tạo nên một gói nhỏ gọn, nhẹ và thuận tiện để phục vụ những món ăn ngon cho cả hai người. Bao gồm hai đĩa có cạnh cao, một trong số đó như một nắp, hai Pack-Up-Cups có thể thu gọn, hoàn hảo cho cả đồ uống nóng và lạnh, với nắp đậy đi kèm. Và hai Spork Originals, bộ kết hợp thìa-nĩa-dao của chúng tôi. Tất cả các phần đều có hai lựa chọn màu sắc để giúp sắp xếp ngăn nắp. Nhựa PP, 100% không chứa BPA, an toàn với lò vi sóng (trừ ly Pack-up-Cup) và an toàn cho máy rửa chén.\nHãy quên đi những hộp đựng thực phẩm dùng một lần chất lượng thấp và đầu tư một bộ hộp đựng đồ ăn uống ngoài trời thân thiện với môi trường.\nBao gồm:\nNắp / đĩa (500 ml) x 2 chiếc\nĐĩa / tô (900 ml).\nPack-up-Cup với vạch đo (260 ml) x 2 chiếc\nMuỗng-nĩa-dao x 2 chiếc\nDây buộc\nĐặc điểm nổi bật:\n2 Đĩa & 1 Bát – Thực tế và có thể xếp chồng lên nhau.\n2 Ly xếp Pack-Up-Cup – Mở rộng để uống, thu gọn để mang theo\n2 Spork Original – Bộ kết hợp thìa-nĩa-dao thiết thực và có thể tái sử dụng\n100% không chứa BPA\nLight My Fire\nlà một công ty Thụy Điển và đã chọn để sản xuất sản phẩm ngay tại đây. Lý do rất đơn giản: Có một nhà máy hoàn toàn dành riêng cho các sản phẩm ,\nLight My Fire\nkiểm soát hoàn toàn các vấn đề chất lượng, thời gian sản xuất ngắn hơn và ít vận chuyển không cần thiết. Tất cả để có được sản phẩm cuối cùng hoàn hảo và tốt cho môi trường.",
+  "link_nguon": "https://wetrek.vn/san-pham/bo-hop-dung-do-an-da-ngoai-pack-n-eat-kit-light-my-fire.htm",
+  "variants": [
+   {
+    "ma_bien_the": "BEP06_DEN_XANH_LA",
+    "ma_sp": "BEP06",
+    "mau_sac": "Đen/Xanh lá",
+    "gia_goc": 748000,
+    "link_anh": "https://wetrek.vn/pic/products/6eef1725-1f74-4c11-b7c4-6a60dbba3711.jpg;https://wetrek.vn/pic/products/Bo-hop-du_637655950419223230_HasThumb.jpg;https://wetrek.vn/pic/products/Bo-hop-du_637655950452452836_HasThumb.jpg"
+   },
+   {
+    "ma_bien_the": "BEP06_VANG_XANH_DUONG",
+    "ma_sp": "BEP06",
+    "mau_sac": "Vàng/Xanh dương",
+    "gia_goc": 748000,
+    "link_anh": "https://wetrek.vn/pic/products/6eef1725-1f74-4c11-b7c4-6a60dbba3711.jpg;https://wetrek.vn/pic/products/Bo-hop-du_637655950419223230_HasThumb.jpg;https://wetrek.vn/pic/products/Bo-hop-du_637655950452452836_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "BEP07",
+  "ten_sp": "Bếp nướng dã ngoại Campingmoon MT-2",
+  "danh_muc": "Bếp và dụng cụ ăn uống",
+  "thong_so": "Kích thước sử dụng: 35 * 34 * 26cm; Kích thước gấp gọn: 35 * 20 * 9cm; Trọng lượng: 3,5kg",
+  "mo_ta": "Bếp nướng than hoa MT-2 là một loại bếp nướng than hoa tiện dụng, được thiết kế để phục vụ các bữa tiệc nhỏ từ 4 đến 8 người. Với thiết kế nhỏ gọn và chất liệu chất lượng, nó trở thành một lựa chọn phổ biến trong các buổi tiệc ngoài trời, khu vực cắm trại hoặc những cuộc hẹn bạn bè.\nĐiều chỉnh chiều cao của lưới nướng\nBếp nướng than hoa MT-2 được trang bị khả năng điều chỉnh chiều cao của lưới nướng. Điều này cho phép bạn tăng hoặc giảm khoảng cách giữa lửa và thực phẩm, tạo điều kiện nướng lý tưởng cho từng loại thực phẩm. Bằng cách điều chỉnh chiều cao, bạn có thể kiểm soát được nhiệt độ và độ chín của thực phẩm, đảm bảo mỗi món ăn được nướng đều và ngon miệng.\nCấu trúc điều chỉnh khoảng cách thực phẩm và nguồn nhiệt\nBếp nướng than hoa MT-2 có cấu tạo đặc biệt cho phép điều chỉnh khoảng cách giữa thực phẩm và nguồn nhiệt. Với hai nấc điều chỉnh, bạn có thể dễ dàng điều chỉnh khoảng cách sao cho phù hợp với từng loại thực phẩm bạn đang nướng. Việc này giúp bạn kiểm soát được mức độ nhiệt đốt của than hoa, giảm thiểu khả năng cháy khét và đồng thời tăng tính chuyên nghiệp và hiệu quả của quá trình nướng.\nĐảm bảo an toàn cho thực phẩm và sức khỏe\nMột yếu tố quan trọng khi chọn bếp nướng là đảm bảo an toàn cho thực phẩm và sức khỏe người dùng. Bếp nướng than hoa MT-2 được làm từ vật liệu chống rỉ sét, đảm bảo an toàn tuyệt đối cho thực phẩm mà bạn đang nướng. Bạn có thể yên tâm rằng những món ăn được nướng trên bếp này sẽ không bị nhiễm kim loại hay gây hại cho sức khỏe.\nDễ dàng vệ sinh sau khi sử dụng\nViệc vệ sinh sau khi sử dụng bếp nướng là một yếu tố quan trọng để đảm bảo sự bền vững và tuổi thọ của sản phẩm. Bếp nướng than hoa MT-2 được thiết kế sao cho dễ dàng vệ sinh sau mỗi lần sử dụng. Với các bộ phận có thể tháo rời, bạn có thể dễ dàng làm sạch chúng và giữ cho bếp nướng luôn sạch sẽ và gọn gàng.\nGiới thiệu thương hiệu:\nCampingmoon\nđược thành lập vào năm 2011, cung cấp nhiều loại bếp nướng cắm trại và các sản phẩm phụ kiện.\nCampingmoon\nđược bán rộng rãi cho Nhật Bản, Hàn Quốc và Nam Á. \"Đơn giản nhưng đặc biệt\" là động lực cho mục tiêu theo đuổi của công ty để trở thành một công ty khác biệt. Đội ngũ R & D tận tâm với hơn 10 năm kinh nghiệm thiết kế và sản xuất luôn cố gắng cung cấp công cụ độc đáo và sáng tạo nhất cho cắm trại",
+  "link_nguon": "https://wetrek.vn/san-pham/bep-nuong-da-ngoai-campingmoon-mt-2.htm",
+  "variants": [
+   {
+    "ma_bien_the": "BEP07_MACDINH",
+    "ma_sp": "BEP07",
+    "mau_sac": "",
+    "gia_goc": 748000,
+    "link_anh": "https://wetrek.vn/pic/products/70734965-1759-4caf-9ab8-1a302e270201.jpg;https://wetrek.vn/pic/products/Bep-nuong_637695924919025927_HasThumb.jpg;https://wetrek.vn/pic/products/Bep-nuong_637695924961656141_HasThumb.jpg"
+   }
+  ]
+ },
+ {
+  "ma_sp": "BEP08",
+  "ten_sp": "Đĩa gỗ dã ngoại Naturehike Solid Wood NH20CJ013",
+  "danh_muc": "Bếp và dụng cụ ăn uống",
+  "thong_so": "Trọng lượng: 190g; Kích thước sử dụng: Φ15 x 2.1 cm",
+  "mo_ta": "Thiết kế gọn nhẹ, khả năng chịu nhiệt tốt và đặc biệt không gây hại cho sức khỏe sẽ là sự lựa chọn phù hợp cho mỗi chuyến dã ngoại cùng với những ưu điểm nổi bật.\nĐặc điểm nổi bật:\nVới khả năng chịu nhiệt tốt, đĩa có thể để được đồ nóng tốt không gây ảnh hưởng tới sức khoẻ người dùng.\nKích thước nhỏ gọn, đảm bảo an toàn khi sử dựng dễ dàng vệ sinh sau mỗi chuyến đi.\nGỗ có tính thẩm mỹ và độ bền cao, có khả năng chịu lực tốt, không thấm nước và đặc biệt nhanh khô, dễ dàng vệ sinh.",
+  "link_nguon": "https://wetrek.vn/san-pham/dia-go-da-ngoai-naturehike-solid-wood-nh20cj013.htm",
+  "variants": [
+   {
+    "ma_bien_the": "BEP08_NAU",
+    "ma_sp": "BEP08",
+    "mau_sac": "Nâu",
+    "gia_goc": 275000,
+    "link_anh": "https://wetrek.vn/pic/products/dia-go-da-ngoai-natuerhike-9999-5_638442802917274611.jpg;https://wetrek.vn/pic/products/dia-go-da-ngoai-natuerhike-9999-1_638835032881351911.jpg;https://wetrek.vn/pic/products/dia-go-da-ngoai-natuerhike-9999-2_638835032951976443.jpg"
+   },
+   {
+    "ma_bien_the": "BEP08_KAKI",
+    "ma_sp": "BEP08",
+    "mau_sac": "Kaki",
+    "gia_goc": 275000,
+    "link_anh": "https://wetrek.vn/pic/products/dia-go-da-ngoai-natuerhike-9999-3_638442803081743282.jpg;https://wetrek.vn/pic/products/dia-go-da-ngoai-natuerhike-9999-1_638835032597603778.jpg;https://wetrek.vn/pic/products/dia-go-da-ngoai-natuerhike-9999-2_638835032699634396.jpg"
+   }
+  ]
+ }
+];

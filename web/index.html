@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WANDERENT – Thuê đồ cắm trại &amp; outdoor trực tuyến</title>
+  <meta name="description" content="Thuê lều, túi ngủ, ván SUP, bếp dã ngoại theo ngày. Đặt cọc 30%, hoàn cọc tự động.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- HEADER: render bởi common.js -> renderHeader() -->
+  <header id="site-header"></header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <!-- Pattern chính: đường bình độ (theo bộ nhận diện) -->
+      <svg class="hero-topo" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g fill="none" stroke="#C9B9A3" stroke-width="1.2">
+          <path d="M-20 120c180-60 300 40 480 0s320-90 520-30 300 80 480 20"/>
+          <path d="M-20 170c180-60 300 40 480 0s320-90 520-30 300 80 480 20"/>
+          <path d="M-20 220c200-50 320 50 500 10s300-80 500-20 300 70 480 10"/>
+          <path d="M-20 420c160 40 300-50 480-10s320 90 520 30 300-70 480-10"/>
+          <path d="M-20 470c160 40 300-50 480-10s320 90 520 30 300-70 480-10"/>
+          <path d="M-20 520c180 30 320-40 500 0s300 70 500 20 300-60 480 0"/>
+          <ellipse cx="1180" cy="300" rx="120" ry="60"/><ellipse cx="1180" cy="300" rx="190" ry="100"/>
+          <ellipse cx="1180" cy="300" rx="260" ry="140"/>
+        </g>
+      </svg>
+
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">Nền tảng thuê đồ cắm trại &amp; outdoor trực tuyến</p>
+          <h1>Đồ cắm trại xịn,<br><em>thuê theo ngày</em> – đi ngay cuối tuần này</h1>
+          <p class="hero-lead">Chọn ngày, đặt đồ và kiểm tra tồn kho ngay trên web. Đặt cọc 30%, trả đồ xong được hoàn cọc tự động.
+            Không cần mua, không lo cất giữ.</p>
+
+          <!-- Thanh đặt thuê nhanh: chuyển sang products.html?dm=...&from=...&to=... -->
+          <form class="booking-bar" id="booking-form" action="products.html">
+            <div class="date-field">
+              <label for="bk-from">Ngày nhận</label>
+              <input id="bk-from" name="from" type="date" required>
+            </div>
+            <div class="date-field">
+              <label for="bk-to">Ngày trả</label>
+              <input id="bk-to" name="to" type="date" required>
+            </div>
+            <div class="date-field">
+              <label for="bk-cat">Thiết bị</label>
+              <select id="bk-cat" name="dm">
+                <option value="">Tất cả thiết bị</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" type="submit" data-icon="search">Tìm đồ thuê</button>
+          </form>
+
+          <div class="hero-trust">
+            <span class="badge badge-ok" data-icon="check">Kiểm tra tồn kho theo ngày</span>
+            <span class="badge badge-cam" data-icon="coins">Đặt cọc 30%</span>
+            <span class="badge badge-ok" data-icon="refresh">Tự động hoàn cọc khi trả đồ</span>
+          </div>
+        </div>
+
+        <!-- Ảnh ghép từ dữ liệu sản phẩm (home.js điền) -->
+        <div class="hero-visual" id="hero-visual" aria-label="Thiết bị nổi bật"></div>
+      </div>
+
+      <!-- Pattern phụ: núi – lều – đường trail -->
+      <svg class="hero-mountains" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 70V50l120-30 90 22 140-40 120 34 100-18 160 30 110-26 140 24 120-36 150 40 90-14 100 20v34Z" fill="#F7F3EE"/>
+      </svg>
+    </section>
+
+    <!-- ================= GIÁ TRỊ THƯƠNG HIỆU ================= -->
+    <section class="section">
+      <div class="container values">
+        <div class="value-card">
+          <div class="value-icon" data-icon="laptop"></div>
+          <div>
+            <h3>Tiện lợi</h3>
+            <p>Số hóa toàn bộ quy trình: chọn ngày, đặt đồ, thanh toán cọc ngay trên web.</p>
+          </div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" data-icon="shield"></div>
+          <div>
+            <h3>Tin cậy</h3>
+            <p>Thiết bị chính hãng, kiểm tra trước mỗi lần giao. Cọc được hoàn tự động sau khi trả đồ.</p>
+          </div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" data-icon="mountain"></div>
+          <div>
+            <h3>Phiêu lưu</h3>
+            <p>Combo theo từng kiểu chuyến đi, từ cặp đôi tới nhóm bạn, để bạn chỉ cần lên đường.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DANH MỤC ================= -->
+    <section class="section" id="danh-muc">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Thuê thiết bị</p>
+            <h2 class="section-title">Danh mục thiết bị</h2>
+          </div>
+          <a class="link-more" href="products.html" data-icon-after="arrow">Xem tất cả</a>
+        </div>
+        <div class="cat-grid" id="cat-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= SẢN PHẨM NỔI BẬT ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Được thuê nhiều</p>
+            <h2 class="section-title">Thiết bị nổi bật</h2>
+            <p class="section-sub">Mỗi danh mục 2 món tiêu biểu. Bấm vào để xem màu, thông số và chọn ngày thuê.</p>
+          </div>
+          <a class="link-more" href="products.html" data-icon-after="arrow">Xem tất cả thiết bị</a>
+        </div>
+        <div class="product-grid" id="featured-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= QUY TRÌNH THUÊ ================= -->
+    <section class="section" id="quy-trinh">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Hướng dẫn thuê</p>
+            <h2 class="section-title">Thuê đồ chỉ với 4 bước</h2>
+          </div>
+        </div>
+        <ol class="steps" style="list-style:none;margin:0;padding:0">
+          <li class="step">
+            <span class="step-num">1</span>
+            <h3>Chọn ngày &amp; thiết bị</h3>
+            <p>Chọn ngày nhận – ngày trả, hệ thống hiển thị tồn kho còn trống theo đúng ngày.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">2</span>
+            <h3>Đặt cọc 30%</h3>
+            <p>Thanh toán trước 30% giá trị thiết bị để giữ đồ cho chuyến đi của bạn.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">3</span>
+            <h3>Nhận đồ &amp; lên đường</h3>
+            <p>Nhận tại điểm hẹn hoặc giao tận nơi, kiểm tra đầy đủ phụ kiện trước khi đi.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">4</span>
+            <h3>Trả đồ, hoàn cọc tự động</h3>
+            <p>Trả đồ đúng hạn, cọc được hoàn tự động. Không cần giặt giũ hay cất giữ.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= COMBO CHUYẾN ĐI ================= -->
+    <section class="section" id="combo">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Combo chuyến đi</p>
+            <h2 class="section-title">Combo gợi ý theo kiểu chuyến đi</h2>
+            <p class="section-sub">Ghép sẵn từ các thiết bị lẻ. Danh sách món và giá combo do nhóm chốt sau.</p>
+          </div>
+        </div>
+        <div class="combo-grid" id="combo-grid"></div>
+
+        <div class="cta-band">
+          <div>
+            <h2>Sẵn sàng cho chuyến đi tiếp theo?</h2>
+            <p>Chọn ngày ngay để giữ đồ trước khi hết hàng cuối tuần.</p>
+          </div>
+          <a class="btn btn-primary btn-lg" href="products.html" data-icon="calendar">Đặt thuê ngay</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: render bởi common.js -> renderFooter() -->
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
