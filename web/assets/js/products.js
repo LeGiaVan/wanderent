@@ -24,7 +24,9 @@
   fromEl.min = WR.toISO(new Date()); toEl.min = dates.from;
   const showDays = () => {
     const n = daysBetween(fromEl.value, toEl.value);
-    noteEl.innerHTML = `Thời gian thuê: <strong>${n} ngày</strong>. Tồn kho theo ngày sẽ hiển thị khi có hệ thống đặt thuê.`;
+    const { availableQty } = WR;
+    const free = PRODUCTS.filter((p) => availableQty(p.variants[0].ma_bien_the, fromEl.value, toEl.value) > 0).length;
+    noteEl.innerHTML = `Thời gian thuê: <strong>${n} ngày</strong> (${WR.fmtDate(fromEl.value)} → ${WR.fmtDate(toEl.value)}). Còn trống: <strong>${free}/${PRODUCTS.length}</strong> thiết bị. <a href="inventory.html">Xem lịch tồn kho</a>`;
   };
   const onDate = () => {
     toEl.min = fromEl.value;
@@ -75,6 +77,7 @@
     if (state.colors) list = list.filter(hasColors);
     if (state.sort === "price-asc") list.sort((x, y) => minPrice(x) - minPrice(y));
     if (state.sort === "price-desc") list.sort((x, y) => minPrice(y) - minPrice(x));
+    if (state.sort === "rent-asc") list.sort((x, y) => (WR.rentPrice(x) || 0) - (WR.rentPrice(y) || 0));
     if (state.sort === "name") list.sort((x, y) => cleanName(x.ten_sp).localeCompare(cleanName(y.ten_sp), "vi"));
     return list;
   };

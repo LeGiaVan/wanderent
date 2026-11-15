@@ -25,7 +25,7 @@
     <div class="pd-layout">
       <!-- ============ ẢNH ============ -->
       <section aria-label="Hình ảnh sản phẩm">
-        <div class="gallery-main"><img id="main-img" src="" alt="" referrerpolicy="no-referrer"></div>
+        <div class="gallery-main" id="gallery-main"></div>
         <div class="gallery-thumbs" id="thumbs"></div>
       </section>
 
@@ -35,13 +35,15 @@
         <h1 id="pd-name"></h1>
         <div class="pd-meta">
           <span>Mã: <strong id="pd-sku"></strong></span>
-          <span class="badge badge-ok" data-icon="check">Kiểm tra tồn kho theo ngày</span>
+          <a class="badge badge-ok" href="inventory.html" data-icon="check">Kiểm tra tồn kho theo ngày</a>
         </div>
 
         <div class="pd-price-box">
           <span class="rent-price" id="pd-rent"></span>
-          <span class="value-price">Giá trị sản phẩm: <strong id="pd-value"></strong> · Đặt cọc 30%: <strong id="pd-deposit"></strong></span>
+          <span class="value-price">Giá trị thiết bị (không phải tiền thuê): <strong id="pd-value"></strong> · <a href="deposit.html">Cọc 30%</a>: <strong id="pd-deposit"></strong></span>
         </div>
+        <p class="stock-banner ok" id="pd-stock"></p>
+        <div class="stock-cal" id="stock-cal" aria-label="Lịch còn hàng 14 ngày tới"></div>
 
         <fieldset class="color-options" id="color-wrap" style="display:block">
           <legend class="opt-label">Màu sắc: <span id="color-name"></span></legend>
@@ -70,10 +72,14 @@
           </div>
         </div>
 
+        <p class="form-error" id="pd-error" hidden></p>
         <div class="pd-summary" aria-live="polite">
-          <div><span>Số ngày thuê</span><strong id="sum-days"></strong></div>
-          <div><span>Tiền thuê</span><strong id="sum-rent"></strong></div>
-          <div class="total"><span>Tiền cọc cần trả trước (30%)</span><strong id="sum-deposit"></strong></div>
+          <div><span>Giá thuê / ngày</span><strong id="sum-rent-day"></strong></div>
+          <div><span>Số ngày × số lượng</span><strong id="sum-days"></strong></div>
+          <div><span>Tiền thuê (trả khi nhận đồ)</span><strong id="sum-rent"></strong></div>
+          <div><span>Cọc 30% (hoàn lại khi trả đồ)</span><strong id="sum-deposit"></strong></div>
+          <div class="muted"><span>Phí giao tận nơi (nếu chọn lúc thanh toán)</span><strong>+ 50.000 đ</strong></div>
+          <div class="total"><span>Cần trả hôm nay (cọc)</span><strong id="sum-today"></strong></div>
         </div>
 
         <div class="pd-cta">
@@ -82,9 +88,9 @@
         </div>
 
         <ul class="pd-perks">
-          <li><span data-icon="refresh"></span><span>Tự động hoàn cọc sau khi trả đồ</span></li>
-          <li><span data-icon="shield"></span><span>Thiết bị chính hãng, kiểm tra kỹ trước mỗi lần giao</span></li>
-          <li><span data-icon="truck"></span><span>Nhận tại điểm hẹn hoặc giao tận nơi trong TP.HCM</span></li>
+          <li><span data-icon="refresh"></span><a href="refund.html">Tự động hoàn cọc sau khi trả đồ</a></li>
+          <li><span data-icon="shield"></span><a href="care.html">Thiết bị được vệ sinh, kiểm tra trước mỗi lần giao</a></li>
+          <li><span data-icon="truck"></span><a href="contact.html">Nhận tại Thủ Đức hoặc giao tận nơi TP.HCM (+50.000đ)</a></li>
         </ul>
       </section>
     </div>

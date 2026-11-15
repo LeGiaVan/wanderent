@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thanh toán cọc – WANDERENT</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Trang chủ</a><span aria-hidden="true">/</span>
+      <a href="cart.html">Giỏ thuê</a><span aria-hidden="true">/</span>
+      <span aria-current="page">Thanh toán cọc</span>
+    </nav>
+    <h1 class="section-title" style="margin-bottom:8px">Thanh toán cọc &amp; nhận đồ</h1>
+    <p class="section-sub" style="margin-bottom:20px">Bản demo học thuật: thanh toán được ghi nhận trên trình duyệt, không trừ tiền thật.</p>
+    <form class="check-layout" id="checkout-form">
+      <div>
+        <div class="form-card" style="margin-bottom:16px">
+          <h2>Thông tin người thuê</h2>
+          <div class="field"><label for="c-name">Họ tên</label><input id="c-name" required></div>
+          <div class="field"><label for="c-phone">Số điện thoại</label><input id="c-phone" required></div>
+          <div class="field"><label for="c-email">Email</label><input id="c-email" type="email" required></div>
+        </div>
+        <div class="form-card" style="margin-bottom:16px">
+          <h2>Nhận đồ ở đâu?</h2>
+          <label class="radio-card"><input type="radio" name="fulfill" value="pickup" checked>
+            <span><strong>Nhận tại cửa hàng</strong><br>669 Quốc lộ 1, P. Linh Xuân, TP. Thủ Đức · 8:00–20:00 · miễn phí</span>
+          </label>
+          <label class="radio-card"><input type="radio" name="fulfill" value="delivery">
+            <span><strong>Giao tận nơi trong TP.HCM</strong><br>Phí 50.000đ, giao trong khung 8:00–20:00</span>
+          </label>
+          <div class="field" id="addr-wrap" hidden>
+            <label for="c-addr">Địa chỉ giao</label>
+            <textarea id="c-addr" placeholder="Số nhà, đường, quận/huyện"></textarea>
+          </div>
+          <div class="field"><label for="c-note">Ghi chú (giờ nhận, chỗ để xe…)</label><textarea id="c-note"></textarea></div>
+        </div>
+        <div class="form-card">
+          <h2>Cách thanh toán cọc</h2>
+          <label class="radio-card"><input type="radio" name="pay" value="momo" checked><span>Ví MoMo (demo)</span></label>
+          <label class="radio-card"><input type="radio" name="pay" value="transfer"><span>Chuyển khoản Vietcombank – WANDERENT – 0123456789</span></label>
+          <label class="radio-card"><input type="radio" name="pay" value="card"><span>Thẻ nội địa / Visa (demo)</span></label>
+        </div>
+      </div>
+      <aside class="summary-box" id="pay-sum"></aside>
+    </form>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/checkout.js"></script>
+</body>
+</html>

@@ -52,19 +52,15 @@
   const featured = CATEGORIES.flatMap((c) => PRODUCTS.filter((p) => p.danh_muc === c.name).slice(0, 2));
   document.getElementById("featured-grid").innerHTML = featured.map(productCard).join("");
 
-  // ---- Combo gợi ý (ghép từ thiết bị lẻ; giá combo chưa có) ----
-  const COMBOS = [
-    { name: "Combo Cặp đôi", tag: "2 người · 1 đêm", items: [["LEU08", 1], ["TUINGU06", 2], ["BEP03", 1], ["BEP06", 1]] },
-    { name: "Combo Nhóm bạn", tag: "4–6 người · 2 ngày", items: [["LEU02", 1], ["TUINGU01", 4], ["BEP01", 1], ["BEP05", 1], ["SUP04", 1]] },
-    { name: "Combo Sinh tồn", tag: "Trekking · gọn nhẹ", items: [["LEU05", 1], ["TUINGU05", 1], ["BEP03", 1], ["BEP04", 1], ["BEP02", 1]] },
-  ];
+  const COMBOS = WR.COMBOS;
   document.getElementById("combo-grid").innerHTML = COMBOS.map((cb) => {
     const ps = cb.items.map(([id, qty]) => ({ p: byId(id), qty })).filter((x) => x.p);
+    const price = WR.comboPrice(cb);
     return `
       <article class="combo-card">
         <div class="combo-media">
           ${ps.slice(0, 3).map(({ p }) => `<img src="${esc(images(p.variants[0])[0])}" alt="" loading="lazy" referrerpolicy="no-referrer">`).join("")}
-          <span class="badge">Combo tiết kiệm</span>
+          <span class="badge">Giảm 10%</span>
         </div>
         <div class="combo-body">
           <div>
@@ -75,10 +71,27 @@
             ${ps.map(({ p, qty }) => `<li>${icon("check")}<a href="product.html?id=${p.ma_sp}">${qty > 1 ? qty + " × " : ""}${esc(cleanName(p.ten_sp))}</a></li>`).join("")}
           </ul>
           <div class="combo-foot">
-            <span class="rent-price">Giá combo: đang cập nhật</span>
-            <a class="btn btn-primary" href="products.html" aria-label="Thuê ${esc(cb.name)}">${icon("arrow")}</a>
+            <span class="rent-price">${WR.vnd(price.rentDaySale)} <small>/ ngày</small></span>
+            <button class="btn btn-primary" type="button" data-combo="${esc(cb.id)}" aria-label="Thuê ${esc(cb.name)}">Thuê combo</button>
           </div>
         </div>
       </article>`;
   }).join("");
+
+  document.getElementById("combo-grid").addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-combo]"); if (!btn) return;
+    const cb = COMBOS.find((c) => c.id === btn.dataset.combo); if (!cb) return;
+    const dates = WR.getDates();
+    let blocked = 0;
+    cb.items.forEach(([id, qty]) => {
+      const p = byId(id); if (!p) return;
+      const sku = p.variants[0].ma_bien_the;
+      const v = WR.validateRental({ sku, from: dates.from, to: dates.to, qty });
+      if (!v.ok) { blocked += 1; return; }
+      WR.addToCart({ ma_bien_the: sku, qty, from: dates.from, to: dates.to, combo: cb.id });
+    });
+    if (blocked) WR.toast("Một số món trong combo đang hết. Đã thêm các món còn trống vào giỏ.");
+    else WR.toast(`Đã thêm ${cb.name} vào giỏ thuê`);
+    location.href = "cart.html";
+  });
 })();

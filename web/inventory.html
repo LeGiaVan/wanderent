@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tồn kho theo ngày – WANDERENT</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container" style="padding-bottom:64px">
+    <nav class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><span>Tồn kho theo ngày</span></nav>
+    <h1 class="section-title">Kiểm tra tồn kho theo ngày</h1>
+    <p class="lead">Chọn khoảng ngày để xem món nào còn trống. Số lượng bị trừ theo các đơn đã cọc / đang thuê trên trình duyệt này.</p>
+    <form class="rent-dates" id="inv-dates" onsubmit="return false">
+      <div class="date-field"><label for="i-from">Ngày nhận</label><input id="i-from" type="date"></div>
+      <div class="date-field"><label for="i-to">Ngày trả</label><input id="i-to" type="date"></div>
+      <p class="days-note" id="i-note"></p>
+    </form>
+    <div id="inv-list" style="margin-top:20px"></div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/inventory.js"></script>
+</body>
+</html>
