@@ -11,16 +11,20 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="admin-shell">
-  <div class="admin-bar">
-    <strong>WANDERENT · Đơn thuê</strong>
-    <span id="admin-who"></span>
-    <div style="display:flex;gap:12px">
-      <a href="index.html">Về website</a>
-      <button type="button" id="admin-out" class="link-btn" style="color:#fff">Đăng xuất</button>
-    </div>
-  </div>
-  <div class="admin-wrap" id="admin-root"></div>
+  <header class="admin-bar">
+    <a class="admin-brand" href="admin.html"><img src="assets/img/logo.png" alt="" width="96" height="32"><strong>Quản trị</strong></a>
+    <nav class="admin-tabs" id="admin-tabs" aria-label="Chức năng quản trị" hidden>
+      <a href="#don" data-tab="don">Đơn thuê</a>
+      <a href="#ton-kho" data-tab="ton-kho">Kho &amp; sản phẩm</a>
+      <a href="#website" data-tab="website">Thông tin website</a>
+      <a href="#hssv" data-tab="hssv">Duyệt HSSV <span class="tab-badge" id="hssv-badge" hidden></span></a>
+      <a href="#email" data-tab="email">Email đã gửi</a>
+    </nav>
+    <a class="admin-viewsite" href="index.html" target="_blank" rel="noopener">Mở trang web ở tab mới ↗</a>
+  </header>
+  <main class="admin-wrap" id="admin-root"></main>
   <script src="assets/js/data.js"></script>
+  <script src="assets/js/content.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/admin.js"></script>
 </body>

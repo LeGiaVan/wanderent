@@ -218,22 +218,35 @@ Hãy ...
 
 ## 7. Website demo (thư mục `web/`)
 
-Thiết kế sơ bộ 3 trang bằng **HTML + CSS + JavaScript thuần**, không cần cài đặt hay build. Mở thẳng `web/index.html` bằng trình duyệt là chạy.
+HTML + CSS + JavaScript thuần, không cần build. Mở `web/index.html` hoặc chạy `python3 -m http.server` trong `web/`.
+Mọi dữ liệu demo (giỏ, đơn, tài khoản, ảnh thẻ HSSV, chỉnh sửa của admin) lưu trong **localStorage của trình duyệt**.
 
 | Trang | File | Nội dung |
 |---|---|---|
-| Trang chủ | `index.html` + `assets/js/home.js` | Hero kèm thanh chọn ngày, 3 giá trị thương hiệu, 4 danh mục, 8 thiết bị nổi bật, quy trình thuê 4 bước, 3 combo gợi ý, CTA |
-| Danh sách | `products.html` + `assets/js/products.js` | Chọn ngày thuê; lọc theo danh mục / khoảng giá trị / có nhiều màu; tìm kiếm không dấu; sắp xếp. Link `?dm=leu\|tui-ngu\|sup\|bep` |
-| Chi tiết | `product.html?id=LEU01` + `assets/js/product.js` | Ảnh và giá đổi theo màu (`&mau=LEU01_KAKI`), chọn ngày + số lượng, tính tiền cọc 30%, tab Mô tả/Thông số, sản phẩm liên quan |
+| Trang chủ | `index.html` + `home.js` | Thanh chọn ngày, 3 thẻ giá trị (bấm sang trang riêng), danh mục, thiết bị nổi bật, 4 bước (bấm sang `guide.html#buoc-N`), combo |
+| Danh sách | `products.html` + `products.js` | Lọc danh mục / **giá thuê/ngày** / nhiều màu, tìm không dấu, sắp xếp |
+| Chi tiết | `product.html?id=…` + `product.js` | Giá theo bậc ngày, lịch còn hàng 14 ngày, video có ảnh đại diện + nút phát, mô tả có cấu trúc |
+| Combo | `combo.html` + `combo.js` | Mặc định báo giá chuyến 2 ngày (đổi được ngày), trùng khớp giỏ; bấm từng món để xem nhanh (khung bên phải) |
+| Hướng dẫn | `guide.html` + `guide.js` | 4 bước chi tiết, bảng giá nhiều ngày, máy tính thử |
+| Ưu đãi HSSV | `student.html` + `student.js` | Tải ảnh thẻ, kiểm tra trạng thái duyệt |
+| Giỏ / Thanh toán | `cart.html`, `checkout.html`, `payment.html` | Sửa ngày nhận/trả và màu ngay trên từng món (món combo đổi ngày cả bộ), chặn hết hàng; thanh toán theo bước, chọn địa chỉ trong sổ hoặc thêm mới, có nút quay lại sửa thông tin (giữ nguyên lựa chọn); ưu đãi HSSV tự áp dụng nếu thẻ đã được duyệt trước; thanh toán demo MoMo QR / chuyển khoản VietQR / thẻ + OTP (thẻ thử 4111 1111 1111 1111, OTP 123456), giữ đồ 15 phút |
+| Hóa đơn | `invoice.html?id=…` | In / lưu PDF, mở bằng ứng dụng email, gửi lại |
+| Tài khoản | `account.html` | Đăng nhập bằng **email hoặc số điện thoại**, đơn thuê dạng thẻ (đơn giao tận nơi có nút **Đã nhận được hàng / Báo thiếu-hỏng**), hồ sơ (sửa tên, SĐT, mật khẩu), sổ địa chỉ, xác minh HSSV. Khách demo: 0912 345 678 / 123456 |
+| Quản trị | `admin.html` (admin@wanderent.vn / wanderent) | Đơn thuê kiểu Odoo (bảng trạng thái, nút xử lý từng bước, kiểm tra trả đồ + khấu trừ, lịch sử), tab **Kho & sản phẩm** (tìm kiếm, lọc theo nhóm, nút Chỉnh sửa ngay trên từng sản phẩm), thông tin website, duyệt HSSV, email đã gửi |
+| Chính sách | `deposit.html`, `refund.html`, `care.html`, `faq.html`, `contact.html`, `inventory.html` | |
 
-- **Header và footer** dùng chung, sinh bởi `assets/js/common.js` (`renderHeader`, `renderFooter`), dùng logo `assets/img/logo.png` (copy từ `images/Logo.png`).
-- **Màu và font** theo bộ nhận diện (`images/landing_page.png`), khai báo ở `:root` trong `assets/css/style.css`. Font: Be Vietnam Pro. Nút CTA dùng cam đất đậm `#A65A30` thay cho `#C97A4A`, vì `#C97A4A` với chữ trắng cỡ nhỏ không đủ độ tương phản để dễ đọc.
-- **Dữ liệu**: `assets/js/data.js` được sinh từ `output/products.json`. Sau khi crawl lại, chạy `.venv/bin/python web/build_data.py` để cập nhật.
-- **Ảnh** lấy trực tiếp từ link trong `link_anh`, không tải về máy.
-- **Giá thuê chưa có**, nên web hiển thị "đang cập nhật". Khi chốt giá, điền vào `RENT_PRICE_PER_DAY` ở đầu `common.js`, ví dụ `{ LEU01: 120000 }`. Giao diện sẽ tự hiện giá/ngày và tính tiền thuê theo số ngày.
-- **Combo** ở trang chủ chỉ là gợi ý ghép từ hàng lẻ (`COMBOS` trong `home.js`). Nhóm sửa danh sách món và giá.
-- Ngày thuê và giỏ thuê demo được lưu trong `localStorage`. Nút "Đặt thuê ngay" chỉ hiện thông báo demo.
-- Các chỗ ghi `[Địa chỉ…]`, `[Số điện thoại]`, `[Email liên hệ]` ở footer là chỗ trống để nhóm điền.
+Khi admin đăng nhập, mọi trang có thanh trên cùng để chuyển nhanh **Trang web ⇄ Trang quản trị**.
+
+**Quy tắc giá** (khai báo đầu `assets/js/common.js`):
+- Giá thuê ngày đầu: `DEFAULT_RENT`. Ngày 2–3 tính 80%, từ ngày 4 tính 60% (`DAY_TIERS`).
+- Cọc = 30% giá trị thiết bị, được hoàn khi trả hàng sau khi nhân viên kiểm tra (không có hoàn cọc tự động).
+- Combo giảm 10% tiền thuê khi đủ bộ trong cùng khoảng ngày. HSSV đã duyệt giảm 10% tiền thuê, **không cộng dồn** với combo.
+- Admin có thể ghi đè tên, giá thuê, giá trị, số lượng kho, ẩn/hiện, tóm tắt mô tả, thông tin cửa hàng và phí giao (`wanderent_settings`).
+
+**Mô tả sản phẩm** đã viết lại theo cấu trúc (tóm tắt, điểm nổi bật, phù hợp cho, đi kèm, lưu ý) trong `assets/js/content.js`.
+Thông số bị lỗi định dạng (TUINGU04, BEP03, SUP01, BEP02) được làm sạch tại đây.
+
+**Hóa đơn email**: bản tĩnh không có máy chủ gửi thư, nên mỗi đơn tạo hóa đơn và ghi vào "Email đã gửi" (mô phỏng). Khi triển khai thật có thể nối EmailJS/SMTP trong `sendInvoiceEmail`.
 
 ## 8. Crawl lại (nếu cần)
 

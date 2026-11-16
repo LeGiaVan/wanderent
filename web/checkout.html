@@ -18,42 +18,51 @@
       <a href="cart.html">Giỏ thuê</a><span aria-hidden="true">/</span>
       <span aria-current="page">Thanh toán cọc</span>
     </nav>
-    <h1 class="section-title" style="margin-bottom:8px">Thanh toán cọc &amp; nhận đồ</h1>
-    <p class="section-sub" style="margin-bottom:20px">Bản demo học thuật: thanh toán được ghi nhận trên trình duyệt, không trừ tiền thật.</p>
-    <form class="check-layout" id="checkout-form">
+    <h1 class="section-title" style="margin-bottom:12px">Thanh toán cọc &amp; nhận đồ</h1>
+    <ol class="checkout-steps" aria-label="Các bước đặt thuê">
+      <li class="done"><a href="cart.html">Giỏ thuê</a></li>
+      <li class="cur" aria-current="step">Thông tin &amp; nhận đồ</li>
+      <li>Thanh toán cọc</li>
+      <li>Hoàn tất</li>
+    </ol>
+    <form class="check-layout" id="checkout-form" novalidate>
       <div>
-        <div class="form-card" style="margin-bottom:16px">
-          <h2>Thông tin người thuê</h2>
-          <div class="field"><label for="c-name">Họ tên</label><input id="c-name" required></div>
-          <div class="field"><label for="c-phone">Số điện thoại</label><input id="c-phone" required></div>
-          <div class="field"><label for="c-email">Email</label><input id="c-email" type="email" required></div>
-        </div>
-        <div class="form-card" style="margin-bottom:16px">
-          <h2>Nhận đồ ở đâu?</h2>
-          <label class="radio-card"><input type="radio" name="fulfill" value="pickup" checked>
-            <span><strong>Nhận tại cửa hàng</strong><br>669 Quốc lộ 1, P. Linh Xuân, TP. Thủ Đức · 8:00–20:00 · miễn phí</span>
-          </label>
-          <label class="radio-card"><input type="radio" name="fulfill" value="delivery">
-            <span><strong>Giao tận nơi trong TP.HCM</strong><br>Phí 50.000đ, giao trong khung 8:00–20:00</span>
-          </label>
-          <div class="field" id="addr-wrap" hidden>
-            <label for="c-addr">Địa chỉ giao</label>
-            <textarea id="c-addr" placeholder="Số nhà, đường, quận/huyện"></textarea>
+        <section class="form-card co-card">
+          <h2><span class="co-num">1</span>Người thuê</h2>
+          <div id="renter-box"></div>
+        </section>
+        <section class="form-card co-card">
+          <h2><span class="co-num">2</span>Nhận đồ ở đâu?</h2>
+          <div class="fulfill-opts">
+            <label class="radio-card"><input type="radio" name="fulfill" value="pickup" checked>
+              <span><strong>Nhận tại cửa hàng</strong> <em class="free">Miễn phí</em><br><small><span data-store="address"></span> · <span data-store="hours"></span></small></span>
+            </label>
+            <label class="radio-card"><input type="radio" name="fulfill" value="delivery">
+              <span><strong>Giao tận nơi trong TP.HCM</strong> <em>+ <span data-store="delivery-fee"></span></em><br><small>Giao trong khung <span data-store="hours"></span></small></span>
+            </label>
           </div>
-          <div class="field"><label for="c-note">Ghi chú (giờ nhận, chỗ để xe…)</label><textarea id="c-note"></textarea></div>
-        </div>
-        <div class="form-card">
-          <h2>Cách thanh toán cọc</h2>
-          <label class="radio-card"><input type="radio" name="pay" value="momo" checked><span>Ví MoMo (demo)</span></label>
-          <label class="radio-card"><input type="radio" name="pay" value="transfer"><span>Chuyển khoản Vietcombank – WANDERENT – 0123456789</span></label>
-          <label class="radio-card"><input type="radio" name="pay" value="card"><span>Thẻ nội địa / Visa (demo)</span></label>
-        </div>
+          <div id="addr-box" hidden></div>
+          <div class="field" style="margin-top:12px"><label for="c-note">Ghi chú cho cửa hàng (không bắt buộc)</label><textarea id="c-note" placeholder="VD: nhận lúc 9:00, cần hướng dẫn dựng lều"></textarea></div>
+        </section>
+        <section class="form-card co-card">
+          <h2><span class="co-num">3</span>Cách thanh toán cọc</h2>
+          <div class="pay-opts">
+            <label class="radio-card pay-opt"><input type="radio" name="pay" value="momo" checked>
+              <span class="pay-logo momo">MoMo</span><span><strong>Ví MoMo</strong><br><small>Quét mã QR bằng ứng dụng MoMo</small></span></label>
+            <label class="radio-card pay-opt"><input type="radio" name="pay" value="transfer">
+              <span class="pay-logo bank">VCB</span><span><strong>Chuyển khoản ngân hàng</strong><br><small>Quét VietQR hoặc chuyển theo số tài khoản</small></span></label>
+            <label class="radio-card pay-opt"><input type="radio" name="pay" value="card">
+              <span class="pay-logo card">VISA</span><span><strong>Thẻ ATM nội địa / Visa / Mastercard</strong><br><small>Nhập thông tin thẻ, xác thực OTP</small></span></label>
+          </div>
+          <p class="meta" style="margin-top:8px">Bản demo học thuật: không trừ tiền thật.</p>
+        </section>
       </div>
-      <aside class="summary-box" id="pay-sum"></aside>
+      <aside class="summary-box co-sum" id="pay-sum" aria-live="polite"></aside>
     </form>
   </main>
   <footer id="site-footer"></footer>
   <script src="assets/js/data.js"></script>
+  <script src="assets/js/content.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/checkout.js"></script>
 </body>

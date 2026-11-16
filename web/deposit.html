@@ -18,12 +18,25 @@
     <p class="lead">Cọc bằng 30% <strong>giá trị thiết bị</strong>, không phải 30% tiền thuê. Cọc để giữ đồ và bảo đảm thiết bị được trả đúng hiện trạng.</p>
     <h2>Khách trả những gì?</h2>
     <ul>
-      <li><strong>Hôm nay:</strong> tiền cọc 30% (+ phí giao 50.000đ nếu giao tận nơi).</li>
-      <li><strong>Khi nhận đồ:</strong> tiền thuê = giá thuê/ngày × số ngày × số lượng.</li>
-      <li><strong>Khi trả đồ đúng hạn, đủ phụ kiện, không hỏng:</strong> cọc được hoàn đủ.</li>
+      <li><strong>Hôm nay:</strong> tiền cọc 30% (+ phí giao <span data-store="delivery-fee"></span> nếu giao tận nơi).</li>
+      <li><strong>Khi nhận đồ:</strong> tiền thuê theo số ngày: ngày đầu 100%, ngày 2–3 còn 80%, từ ngày 4 còn 60% (<a href="guide.html#cach-tinh-gia">cách tính</a>).</li>
+      <li><strong>Khi trả đồ đúng hạn, đủ phụ kiện, không hỏng:</strong> cọc được hoàn đủ sau khi nhân viên kiểm tra.</li>
     </ul>
     <h2>Ví dụ</h2>
-    <p>Lều giá trị 790.000đ, thuê 50.000đ/ngày × 3 ngày. Cọc hôm nay 237.000đ. Tiền thuê khi nhận 150.000đ. Trả đồ xong, 237.000đ được hoàn.</p>
+    <p>Lều vệ sinh LEU01 giá trị 790.000đ, giá thuê 50.000đ ngày đầu, 40.000đ/ngày cho ngày 2–3. Thuê 3 ngày:</p>
+    <ul>
+      <li>Cọc trả hôm nay: 30% × 790.000đ = <strong>237.000đ</strong>.</li>
+      <li>Tiền thuê trả khi nhận đồ: 50.000 + 40.000 + 40.000 = <strong>130.000đ</strong>.</li>
+      <li>Trả đồ đúng hạn, đủ phụ kiện: hoàn lại đủ <strong>237.000đ</strong>.</li>
+    </ul>
+    <h2>Vì sao tiền cọc cao hơn tiền thuê?</h2>
+    <p>Tiền thuê là <strong>chi phí</strong> bạn trả cho số ngày sử dụng. Tiền cọc là <strong>khoản bảo đảm</strong> được hoàn lại,
+      tính theo giá trị thiết bị (giá mua mới). Thiết bị đắt như ván SUP (8–26 triệu) hay lều lớn (7–23 triệu) có cọc từ 2,4 đến 7,8 triệu
+      dù tiền thuê chỉ vài trăm nghìn mỗi ngày. Khoản cọc này thay cho việc giữ CCCD hay cọc 100% như nhiều nơi cho thuê khác.</p>
+    <div class="table-wrap"><table class="combo-table">
+      <thead><tr><th>Thiết bị</th><th>Giá trị</th><th>Thuê 2 ngày</th><th>Cọc 30% (hoàn lại)</th></tr></thead>
+      <tbody id="deposit-examples"></tbody>
+    </table></div>
     <h2>Khấu trừ cọc</h2>
     <ul>
       <li>Trả trễ: 80.000đ / ngày / món.</li>
@@ -35,7 +48,9 @@
   </main>
   <footer id="site-footer"></footer>
   <script src="assets/js/data.js"></script>
+  <script src="assets/js/content.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/page.js"></script>
+  <script src="assets/js/deposit.js"></script>
 </body>
 </html>

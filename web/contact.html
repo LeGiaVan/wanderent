@@ -16,18 +16,19 @@
     <nav class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><span>Liên hệ</span></nav>
     <h1>Nhận đồ ở đâu, khi nào?</h1>
     <div class="info-card">
-      <h3>Điểm nhận tại cửa hàng</h3>
-      <p>669 Quốc lộ 1, KP3, P. Linh Xuân, TP. Thủ Đức, TP.HCM (gần ĐH Kinh tế – Luật)</p>
-      <p>Giờ nhận/trả: <strong>8:00 – 20:00</strong> mỗi ngày</p>
-      <p>Điện thoại: <a href="tel:+84901234567">0901 234 567</a> · Email: <a href="mailto:hello@wanderent.vn">hello@wanderent.vn</a></p>
-      <p><a class="btn btn-primary" href="https://maps.google.com/?q=Đại học Kinh tế Luật TP.HCM" target="_blank" rel="noopener">Mở bản đồ</a></p>
+      <h3 data-store="name"></h3>
+      <p data-store="address"></p>
+      <p>Giờ nhận/trả: <strong data-store="hours"></strong></p>
+      <p>Điện thoại: <a data-store="phone-link"></a> · Email: <a data-store="email-link"></a></p>
+      <p><a class="btn btn-primary" data-store="map-link" href="#" target="_blank" rel="noopener">Mở bản đồ</a></p>
     </div>
     <h2>Giao tận nơi</h2>
-    <p>Nội thành TP.HCM, phí <strong>50.000đ</strong>/lượt giao (chiều nhận). Trả đồ có thể gửi lại điểm Thủ Đức hoặc đặt chiều trả (+50.000đ).</p>
+    <p>Nội thành TP.HCM, phí <strong data-store="delivery-fee"></strong>/lượt giao (chiều nhận). Trả đồ có thể mang lại điểm Thủ Đức hoặc đặt chiều trả (thêm <span data-store="delivery-fee"></span>).</p>
     <iframe title="Bản đồ điểm nhận đồ" src="https://maps.google.com/maps?q=Đại%20học%20Kinh%20tế%20Luật%20TP.HCM&output=embed" width="100%" height="320" style="border:0;border-radius:14px;margin-top:12px" loading="lazy"></iframe>
   </main>
   <footer id="site-footer"></footer>
   <script src="assets/js/data.js"></script>
+  <script src="assets/js/content.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/page.js"></script>
 </body>

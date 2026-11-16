@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Combo chuyến đi – WANDERENT</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Trang chủ</a><span aria-hidden="true">/</span>
+          <span aria-current="page">Combo chuyến đi</span>
+        </nav>
+        <h1>Combo chuyến đi</h1>
+        <p>Bộ đồ ghép sẵn theo kiểu chuyến đi, rẻ hơn 10% so với thuê từng món. Giá mặc định cho chuyến 2 ngày, đổi ngày bên dưới để xem giá khác.
+          Bấm tên từng món để xem nhanh thông tin.</p>
+        <form class="rent-dates" id="combo-dates" onsubmit="return false">
+          <div class="date-field">
+            <label for="cb-from">Ngày nhận</label>
+            <input id="cb-from" type="date">
+          </div>
+          <div class="date-field">
+            <label for="cb-to">Ngày trả</label>
+            <input id="cb-to" type="date">
+          </div>
+          <p class="days-note" id="cb-note" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+    <div class="container">
+      <div class="combo-detail-list" id="combo-list"></div>
+      <section class="info-band">
+        <h2>Combo được tính giá thế nào?</h2>
+        <ul>
+          <li>Mỗi món trong combo tính theo bảng giá nhiều ngày: ngày đầu 100%, ngày 2–3 còn 80%, từ ngày 4 còn 60%.</li>
+          <li>Cộng tiền thuê các món, sau đó giảm 10% cho cả combo.</li>
+          <li>Ưu đãi HSSV <strong>không cộng dồn</strong> với combo: món đã được giảm combo thì không giảm thêm.</li>
+          <li>Xóa bớt món trong giỏ thì combo không còn đủ bộ và sẽ không được giảm 10%.</li>
+        </ul>
+        <p><a class="link-more" href="guide.html#cach-tinh-gia" data-icon-after="arrow">Xem cách tính giá chi tiết</a></p>
+      </section>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/combo.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WANDERENT – Thuê đồ cắm trại &amp; outdoor trực tuyến</title>
-  <meta name="description" content="Thuê lều, túi ngủ, ván SUP, bếp dã ngoại theo ngày. Đặt cọc 30%, hoàn cọc tự động.">
+  <meta name="description" content="Thuê lều, túi ngủ, ván SUP, bếp dã ngoại theo ngày. Đặt cọc 30%, được hoàn cọc khi trả hàng. Thuê càng nhiều ngày giá càng giảm.">
   <link rel="icon" href="assets/img/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,8 +36,8 @@
         <div>
           <p class="eyebrow">Nền tảng thuê đồ cắm trại &amp; outdoor trực tuyến</p>
           <h1>Đồ cắm trại xịn,<br><em>thuê theo ngày</em> – đi ngay cuối tuần này</h1>
-          <p class="hero-lead">Chọn ngày, đặt đồ và kiểm tra tồn kho ngay trên web. Đặt cọc 30%, trả đồ xong được hoàn cọc tự động.
-            Không cần mua, không lo cất giữ.</p>
+          <p class="hero-lead">Chọn ngày, xem lịch còn hàng và đặt đồ ngay trên web. Đặt cọc 30%, được hoàn cọc khi trả hàng.
+            Từ ngày thứ 2 giá thuê chỉ còn 80%, từ ngày thứ 4 còn 60%.</p>
 
           <!-- Thanh đặt thuê nhanh: chuyển sang products.html?dm=...&from=...&to=... -->
           <form class="booking-bar" id="booking-form" action="products.html">
@@ -59,9 +59,10 @@
           </form>
 
           <div class="hero-trust">
-            <a class="badge badge-ok" href="inventory.html" data-icon="check">Kiểm tra tồn kho theo ngày</a>
+            <a class="badge badge-ok" href="inventory.html" data-icon="check">Lịch còn hàng theo ngày</a>
             <a class="badge badge-cam" href="deposit.html" data-icon="coins">Đặt cọc 30%</a>
-            <a class="badge badge-ok" href="refund.html" data-icon="refresh">Tự động hoàn cọc khi trả đồ</a>
+            <a class="badge badge-ok" href="refund.html" data-icon="refresh">Được hoàn cọc khi trả hàng</a>
+            <a class="badge badge-cam" href="student.html" data-icon="student">HSSV giảm 10%</a>
           </div>
         </div>
 
@@ -78,27 +79,30 @@
     <!-- ================= GIÁ TRỊ THƯƠNG HIỆU ================= -->
     <section class="section">
       <div class="container values">
-        <div class="value-card">
+        <a class="value-card" href="guide.html">
           <div class="value-icon" data-icon="laptop"></div>
           <div>
             <h3>Tiện lợi</h3>
-            <p>Số hóa toàn bộ quy trình: chọn ngày, đặt đồ, thanh toán cọc ngay trên web.</p>
+            <p>Chọn ngày, đặt đồ, thanh toán cọc ngay trên web. Không cần nhắn tin chờ báo giá.</p>
+            <span class="value-more" data-icon-after="arrow">Xem hướng dẫn thuê</span>
           </div>
-        </div>
-        <div class="value-card">
+        </a>
+        <a class="value-card" href="care.html">
           <div class="value-icon" data-icon="shield"></div>
           <div>
             <h3>Tin cậy</h3>
-            <p>Thiết bị chính hãng, kiểm tra trước mỗi lần giao. Cọc được hoàn tự động sau khi trả đồ.</p>
+            <p>Thiết bị chính hãng, vệ sinh và kiểm tra trước mỗi lần giao. Được hoàn cọc khi trả hàng, không giữ CCCD.</p>
+            <span class="value-more" data-icon-after="arrow">Quy trình vệ sinh &amp; kiểm tra</span>
           </div>
-        </div>
-        <div class="value-card">
+        </a>
+        <a class="value-card" href="combo.html">
           <div class="value-icon" data-icon="mountain"></div>
           <div>
             <h3>Phiêu lưu</h3>
-            <p>Combo theo từng kiểu chuyến đi, từ cặp đôi tới nhóm bạn, để bạn chỉ cần lên đường.</p>
+            <p>Combo theo từng kiểu chuyến đi, từ cặp đôi tới nhóm bạn, giảm 10% so với thuê lẻ.</p>
+            <span class="value-more" data-icon-after="arrow">Xem combo chuyến đi</span>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -139,27 +143,40 @@
             <p class="eyebrow">Hướng dẫn thuê</p>
             <h2 class="section-title">Thuê đồ chỉ với 4 bước</h2>
           </div>
+          <a class="link-more" href="guide.html" data-icon-after="arrow">Hướng dẫn &amp; cách tính giá</a>
         </div>
-        <ol class="steps" style="list-style:none;margin:0;padding:0">
-          <li class="step">
-            <span class="step-num">1</span>
-            <h3>Chọn ngày &amp; thiết bị</h3>
-            <p>Chọn ngày nhận – ngày trả, hệ thống hiển thị tồn kho còn trống theo đúng ngày.</p>
+        <ol class="steps steps-links">
+          <li>
+            <a class="step" href="guide.html#buoc-1">
+              <span class="step-num">1</span>
+              <h3>Chọn ngày &amp; thiết bị</h3>
+              <p>Chọn ngày nhận – ngày trả, web hiển thị số món còn trống đúng khoảng ngày đó.</p>
+              <span class="value-more" data-icon-after="arrow">Chi tiết bước 1</span>
+            </a>
           </li>
-          <li class="step">
-            <span class="step-num">2</span>
-            <h3>Đặt cọc 30%</h3>
-            <p>Thanh toán trước 30% giá trị thiết bị để giữ đồ cho chuyến đi của bạn.</p>
+          <li>
+            <a class="step" href="guide.html#buoc-2">
+              <span class="step-num">2</span>
+              <h3>Đặt cọc 30%</h3>
+              <p>Thanh toán cọc 30% giá trị thiết bị để giữ đồ. Tiền thuê trả khi nhận đồ.</p>
+              <span class="value-more" data-icon-after="arrow">Chi tiết bước 2</span>
+            </a>
           </li>
-          <li class="step">
-            <span class="step-num">3</span>
-            <h3>Nhận đồ &amp; lên đường</h3>
-            <p>Nhận tại điểm hẹn hoặc giao tận nơi, kiểm tra đầy đủ phụ kiện trước khi đi.</p>
+          <li>
+            <a class="step" href="guide.html#buoc-3">
+              <span class="step-num">3</span>
+              <h3>Nhận đồ &amp; lên đường</h3>
+              <p>Nhận tại điểm hẹn Thủ Đức hoặc giao tận nơi, kiểm tra đủ phụ kiện trước khi đi.</p>
+              <span class="value-more" data-icon-after="arrow">Chi tiết bước 3</span>
+            </a>
           </li>
-          <li class="step">
-            <span class="step-num">4</span>
-            <h3>Trả đồ, hoàn cọc tự động</h3>
-            <p>Trả đồ đúng hạn, cọc được hoàn tự động. Không cần giặt giũ hay cất giữ.</p>
+          <li>
+            <a class="step" href="guide.html#buoc-4">
+              <span class="step-num">4</span>
+              <h3>Trả đồ, nhận lại cọc</h3>
+              <p>Trả đồ đúng hạn, nhân viên kiểm tra xong là hoàn cọc. Không cần giặt giũ.</p>
+              <span class="value-more" data-icon-after="arrow">Chi tiết bước 4</span>
+            </a>
           </li>
         </ol>
       </div>
@@ -172,8 +189,9 @@
           <div>
             <p class="eyebrow">Combo chuyến đi</p>
             <h2 class="section-title">Combo gợi ý theo kiểu chuyến đi</h2>
-            <p class="section-sub">Ghép sẵn từ thiết bị lẻ, giảm 10% tiền thuê so với thuê từng món.</p>
+            <p class="section-sub" id="combo-sub">Ghép sẵn từ thiết bị lẻ, giảm 10% tiền thuê so với thuê từng món.</p>
           </div>
+          <a class="link-more" href="combo.html" data-icon-after="arrow">Xem chi tiết các combo</a>
         </div>
         <div class="combo-grid" id="combo-grid"></div>
 
@@ -192,6 +210,7 @@
   <footer id="site-footer"></footer>
 
   <script src="assets/js/data.js"></script>
+  <script src="assets/js/content.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/home.js"></script>
 </body>

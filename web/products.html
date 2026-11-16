@@ -51,13 +51,15 @@
           <ul class="cat-filter" id="cat-filter"></ul>
         </div>
         <div class="filter-group">
-          <h3>Giá trị sản phẩm</h3>
-          <div id="price-filter">
-            <label class="check"><input type="radio" name="price" value="" checked> Tất cả</label>
-            <label class="check"><input type="radio" name="price" value="0-1000000"> Dưới 1 triệu</label>
-            <label class="check"><input type="radio" name="price" value="1000000-5000000"> 1 – 5 triệu</label>
-            <label class="check"><input type="radio" name="price" value="5000000-999999999"> Trên 5 triệu</label>
+          <h3>Giá thuê / ngày</h3>
+          <div id="rent-filter">
+            <label class="check"><input type="radio" name="rent" value="" checked> Tất cả</label>
+            <label class="check"><input type="radio" name="rent" value="0-50000"> Dưới 50.000đ</label>
+            <label class="check"><input type="radio" name="rent" value="50000-150000"> 50.000 – 150.000đ</label>
+            <label class="check"><input type="radio" name="rent" value="150000-300000"> 150.000 – 300.000đ</label>
+            <label class="check"><input type="radio" name="rent" value="300000-999999999"> Trên 300.000đ</label>
           </div>
+          <p class="filter-note">Thuê nhiều ngày được giảm: từ ngày 2 còn 80%, từ ngày 4 còn 60%.</p>
         </div>
         <div class="filter-group">
           <h3>Tuỳ chọn</h3>
@@ -74,8 +76,7 @@
             <select id="f-sort">
               <option value="">Mặc định</option>
               <option value="rent-asc">Giá thuê tăng dần</option>
-              <option value="price-asc">Giá trị tăng dần</option>
-              <option value="price-desc">Giá trị giảm dần</option>
+              <option value="rent-desc">Giá thuê giảm dần</option>
               <option value="name">Tên A → Z</option>
             </select>
           </label>
@@ -89,6 +90,7 @@
   <footer id="site-footer"></footer>
 
   <script src="assets/js/data.js"></script>
+  <script src="assets/js/content.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/products.js"></script>
 </body>

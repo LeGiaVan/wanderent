@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ưu đãi học sinh, sinh viên – WANDERENT</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  <main class="container prose-page wide">
+    <nav class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><span aria-current="page">Ưu đãi HSSV</span></nav>
+    <h1>Ưu đãi học sinh, sinh viên: giảm 10% tiền thuê</h1>
+    <p class="lead">Tải ảnh thẻ học sinh / sinh viên còn hạn. Sau khi admin duyệt, mọi đơn đặt bằng email đó được giảm 10% tiền thuê.</p>
+    <div class="student-layout">
+      <section class="form-card">
+        <h2>Gửi xác minh</h2>
+        <div id="student-form"></div>
+      </section>
+      <aside class="info-card">
+        <h3>Điều kiện áp dụng</h3>
+        <ul>
+          <li>Giảm <strong>10% tiền thuê</strong> các món thuê lẻ. Không giảm tiền cọc và phí giao.</li>
+          <li><strong>Không cộng dồn</strong> với combo: món đã được giảm combo 10% thì không giảm thêm.</li>
+          <li>Áp dụng khi email đặt thuê trùng email đã xác minh.</li>
+          <li>Admin duyệt trong 24 giờ. Đơn đặt trong lúc chờ duyệt vẫn được giữ đồ, chỉ chưa được giảm.</li>
+          <li>Mang theo thẻ khi nhận đồ để nhân viên đối chiếu họ tên.</li>
+        </ul>
+        <h3 style="margin-top:16px">Kiểm tra trạng thái</h3>
+        <form id="lookup" class="inline-form">
+          <label class="sr-only" for="lookup-email">Email</label>
+          <input id="lookup-email" type="email" placeholder="Email đã gửi xác minh" required>
+          <button class="btn btn-outline" type="submit">Kiểm tra</button>
+        </form>
+        <p class="meta" id="lookup-out" aria-live="polite"></p>
+      </aside>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/student.js"></script>
+</body>
+</html>

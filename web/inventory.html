@@ -14,17 +14,20 @@
   <header id="site-header"></header>
   <main class="container" style="padding-bottom:64px">
     <nav class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><span>Tồn kho theo ngày</span></nav>
-    <h1 class="section-title">Kiểm tra tồn kho theo ngày</h1>
-    <p class="lead">Chọn khoảng ngày để xem món nào còn trống. Số lượng bị trừ theo các đơn đã cọc / đang thuê trên trình duyệt này.</p>
+    <h1 class="section-title">Lịch còn hàng theo ngày</h1>
+    <p class="lead">Chọn khoảng ngày để xem món nào còn trống. Số lượng đã trừ các đơn đang giữ đồ hoặc đang thuê
+      (bản demo: tính theo các đơn trên trình duyệt này).</p>
     <form class="rent-dates" id="inv-dates" onsubmit="return false">
       <div class="date-field"><label for="i-from">Ngày nhận</label><input id="i-from" type="date"></div>
       <div class="date-field"><label for="i-to">Ngày trả</label><input id="i-to" type="date"></div>
       <p class="days-note" id="i-note"></p>
     </form>
+    <div class="seg-tabs" id="inv-tabs" role="tablist" aria-label="Danh mục"></div>
     <div id="inv-list" style="margin-top:20px"></div>
   </main>
   <footer id="site-footer"></footer>
   <script src="assets/js/data.js"></script>
+  <script src="assets/js/content.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/inventory.js"></script>
 </body>

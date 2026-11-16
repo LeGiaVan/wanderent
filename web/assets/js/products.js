@@ -1,39 +1,34 @@
 /* Trang danh sách sản phẩm — lọc / tìm / sắp xếp phía client, đồng bộ lên URL */
 (function () {
   "use strict";
-  const { PRODUCTS, CATEGORIES, esc, cleanName, catBySlug, minPrice, hasColors, productCard, icon, getDates, setDates, daysBetween } = window.WR;
+  const { PRODUCTS, CATEGORIES, esc, cleanName, catBySlug, hasColors, productCard, icon, getDates, setDates } = window.WR;
   WR.initPage("products");
 
   const params = new URLSearchParams(location.search);
   const state = {
     dm: catBySlug(params.get("dm")) ? params.get("dm") : "",
     q: params.get("tim") || "",
-    price: "",
+    rent: "",
     colors: false,
     sort: "",
   };
 
   // ---- Ngày thuê ----
-  const fromEl = document.getElementById("rd-from");
-  const toEl = document.getElementById("rd-to");
   const noteEl = document.getElementById("days-note");
-  let dates = getDates();
-  if (params.get("from") && params.get("to")) dates = { from: params.get("from"), to: params.get("to") };
-  setDates(dates);
-  fromEl.value = dates.from; toEl.value = dates.to;
-  fromEl.min = WR.toISO(new Date()); toEl.min = dates.from;
+  let initial = getDates();
+  if (WR.isValidISO(params.get("from")) && WR.isValidISO(params.get("to")) && params.get("to") > params.get("from") && params.get("from") >= WR.todayISO()) {
+    initial = { from: params.get("from"), to: params.get("to") };
+    setDates(initial);
+  }
+  const range = WR.bindDateRange(document.getElementById("rd-from"), document.getElementById("rd-to"), {
+    initial,
+    onChange: () => { showDays(); update(); },
+  });
   const showDays = () => {
-    const n = daysBetween(fromEl.value, toEl.value);
-    const { availableQty } = WR;
-    const free = PRODUCTS.filter((p) => availableQty(p.variants[0].ma_bien_the, fromEl.value, toEl.value) > 0).length;
-    noteEl.innerHTML = `Thời gian thuê: <strong>${n} ngày</strong> (${WR.fmtDate(fromEl.value)} → ${WR.fmtDate(toEl.value)}). Còn trống: <strong>${free}/${PRODUCTS.length}</strong> thiết bị. <a href="inventory.html">Xem lịch tồn kho</a>`;
+    const d = range.get();
+    const free = PRODUCTS.filter((p) => WR.availableQty(p.variants[0].ma_bien_the, d.from, d.to) > 0).length;
+    noteEl.innerHTML = `Thời gian thuê: <strong>${d.days} ngày</strong> (${WR.fmtDate(d.from)} → ${WR.fmtDate(d.to)}). Còn trống: <strong>${free}/${PRODUCTS.length}</strong> thiết bị. <a href="inventory.html">Xem lịch còn hàng</a>`;
   };
-  const onDate = () => {
-    toEl.min = fromEl.value;
-    if (toEl.value <= fromEl.value) { const d = new Date(fromEl.value); d.setDate(d.getDate() + 1); toEl.value = WR.toISO(d); }
-    setDates({ from: fromEl.value, to: toEl.value }); showDays();
-  };
-  fromEl.addEventListener("change", onDate); toEl.addEventListener("change", onDate);
   showDays();
 
   // ---- Bộ lọc danh mục ----
@@ -54,7 +49,7 @@
   const searchEl = document.getElementById("f-search");
   searchEl.value = state.q;
   searchEl.addEventListener("input", () => { state.q = searchEl.value; update(); });
-  document.getElementById("price-filter").addEventListener("change", (e) => { state.price = e.target.value; update(); });
+  document.getElementById("rent-filter").addEventListener("change", (e) => { state.rent = e.target.value; update(); });
   const colorsEl = document.getElementById("f-colors");
   colorsEl.addEventListener("change", () => { state.colors = colorsEl.checked; update(); });
   document.getElementById("f-sort").addEventListener("change", (e) => { state.sort = e.target.value; update(); });
@@ -70,14 +65,13 @@
       const q = norm(state.q.trim());
       list = list.filter((p) => norm(p.ten_sp + " " + p.danh_muc + " " + p.thong_so).includes(q));
     }
-    if (state.price) {
-      const [a, b] = state.price.split("-").map(Number);
-      list = list.filter((p) => minPrice(p) >= a && minPrice(p) < b);
+    if (state.rent) {
+      const [a, b] = state.rent.split("-").map(Number);
+      list = list.filter((p) => (WR.rentPrice(p) || 0) >= a && (WR.rentPrice(p) || 0) < b);
     }
     if (state.colors) list = list.filter(hasColors);
-    if (state.sort === "price-asc") list.sort((x, y) => minPrice(x) - minPrice(y));
-    if (state.sort === "price-desc") list.sort((x, y) => minPrice(y) - minPrice(x));
     if (state.sort === "rent-asc") list.sort((x, y) => (WR.rentPrice(x) || 0) - (WR.rentPrice(y) || 0));
+    if (state.sort === "rent-desc") list.sort((x, y) => (WR.rentPrice(y) || 0) - (WR.rentPrice(x) || 0));
     if (state.sort === "name") list.sort((x, y) => cleanName(x.ten_sp).localeCompare(cleanName(y.ten_sp), "vi"));
     return list;
   };
@@ -88,7 +82,7 @@
     const k = c.dataset.clear;
     if (k === "dm") state.dm = "";
     if (k === "q") { state.q = ""; searchEl.value = ""; }
-    if (k === "price") { state.price = ""; document.querySelector('#price-filter input[value=""]').checked = true; }
+    if (k === "rent") { state.rent = ""; document.querySelector('#rent-filter input[value=""]').checked = true; }
     if (k === "colors") { state.colors = false; colorsEl.checked = false; }
     update();
   });
@@ -108,7 +102,7 @@
     const chips = [];
     if (cat) chips.push(["dm", cat.name]);
     if (state.q.trim()) chips.push(["q", `“${state.q.trim()}”`]);
-    if (state.price) chips.push(["price", document.querySelector(`#price-filter input[value="${state.price}"]`).parentElement.textContent.trim()]);
+    if (state.rent) chips.push(["rent", "Giá thuê: " + document.querySelector(`#rent-filter input[value="${state.rent}"]`).parentElement.textContent.trim()]);
     if (state.colors) chips.push(["colors", "Có nhiều màu"]);
     chipsEl.innerHTML = chips.map(([k, label]) =>
       `<button type="button" class="chip" data-clear="${k}" aria-label="Bỏ lọc ${esc(label)}">${esc(label)} ${icon("close")}</button>`).join("");

@@ -17,7 +17,21 @@
       <a href="index.html">Trang chủ</a><span aria-hidden="true">/</span>
       <span aria-current="page">Giỏ thuê</span>
     </nav>
-    <h1 class="section-title" style="margin-bottom:20px">Giỏ thuê</h1>
+    <div class="cart-head">
+      <h1 class="section-title">Giỏ thuê</h1>
+      <div class="cart-tools" id="cart-tools" hidden>
+        <span class="meta" id="cart-count-line"></span>
+        <button type="button" class="btn btn-ghost btn-danger-ghost" id="cart-clear">Xóa toàn bộ giỏ hàng</button>
+      </div>
+    </div>
+    <details class="cart-all-dates" id="cart-dates-wrap" hidden>
+      <summary>Đổi ngày cho cả giỏ cùng lúc</summary>
+      <form class="rent-dates cart-dates" id="cart-dates" onsubmit="return false">
+        <div class="date-field"><label for="ct-from">Ngày nhận (cả giỏ)</label><input id="ct-from" type="date"></div>
+        <div class="date-field"><label for="ct-to">Ngày trả (cả giỏ)</label><input id="ct-to" type="date"></div>
+        <p class="days-note">Áp dụng cho tất cả món trong giỏ (có kiểm tra còn hàng). Muốn đổi riêng từng món, sửa ngay trong ô của món đó.</p>
+      </form>
+    </details>
     <div class="cart-layout">
       <div id="cart-list"></div>
       <aside class="summary-box" id="cart-sum"></aside>
@@ -25,6 +39,7 @@
   </main>
   <footer id="site-footer"></footer>
   <script src="assets/js/data.js"></script>
+  <script src="assets/js/content.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/cart.js"></script>
 </body>

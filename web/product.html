@@ -35,32 +35,60 @@
         <h1 id="pd-name"></h1>
         <div class="pd-meta">
           <span>Mã: <strong id="pd-sku"></strong></span>
-          <a class="badge badge-ok" href="inventory.html" data-icon="check">Kiểm tra tồn kho theo ngày</a>
+          <a class="badge badge-ok" href="inventory.html" data-icon="check">Lịch còn hàng theo ngày</a>
         </div>
 
         <div class="pd-price-box">
           <span class="rent-price" id="pd-rent"></span>
-          <span class="value-price">Giá trị thiết bị (không phải tiền thuê): <strong id="pd-value"></strong> · <a href="deposit.html">Cọc 30%</a>: <strong id="pd-deposit"></strong></span>
+          <ul class="tier-chips" id="pd-tiers" aria-label="Giá thuê theo số ngày"></ul>
+          <span class="value-price">Giá trị sản phẩm: <strong id="pd-value"></strong></span>
+          <span class="value-price"><a href="deposit.html">Cọc 30%</a>: <strong id="pd-deposit"></strong> / món <small>(được hoàn khi trả hàng)</small></span>
         </div>
-        <p class="stock-banner ok" id="pd-stock"></p>
-        <div class="stock-cal" id="stock-cal" aria-label="Lịch còn hàng 14 ngày tới"></div>
+        <p class="hidden-note" id="pd-hidden" hidden>Thiết bị này đang tạm ngừng cho thuê.</p>
 
         <fieldset class="color-options" id="color-wrap" style="display:block">
           <legend class="opt-label">Màu sắc: <span id="color-name"></span></legend>
           <div class="color-options" id="colors" style="margin:0"></div>
         </fieldset>
 
-        <span class="opt-label">Thời gian thuê</span>
-        <div class="pd-dates">
-          <div class="date-field">
-            <label for="pd-from">Ngày nhận</label>
-            <input id="pd-from" type="date">
+        <!-- Chọn ngày thuê trên lịch: bấm ngày nhận rồi ngày trả -->
+        <section class="rent-picker" aria-labelledby="rp-title">
+          <div class="rp-head">
+            <h2 class="opt-label" id="rp-title">Chọn ngày thuê</h2>
+            <ol class="rp-steps" aria-label="Các bước chọn ngày">
+              <li id="rp-s1">1. Bấm ngày nhận</li>
+              <li id="rp-s2">2. Bấm ngày trả</li>
+            </ol>
           </div>
-          <div class="date-field">
-            <label for="pd-to">Ngày trả</label>
-            <input id="pd-to" type="date">
+          <div class="rp-chosen" id="rp-chosen" aria-live="polite"></div>
+          <div class="rp-nav">
+            <button type="button" class="icon-btn" id="rp-prev" aria-label="4 tuần trước">‹</button>
+            <strong id="rp-label"></strong>
+            <button type="button" class="icon-btn" id="rp-next" aria-label="4 tuần sau">›</button>
           </div>
-        </div>
+          <div class="rp-week" aria-hidden="true"><span>T2</span><span>T3</span><span>T4</span><span>T5</span><span>T6</span><span>T7</span><span>CN</span></div>
+          <div class="rp-grid" id="stock-cal" role="group" aria-label="Lịch còn hàng"></div>
+          <ul class="rp-legend">
+            <li><span class="lg ok"></span>Còn hàng</li>
+            <li><span class="lg low"></span>Sắp hết (còn 1)</li>
+            <li><span class="lg out"></span>Hết hàng</li>
+            <li><span class="lg sel"></span>Ngày bạn chọn</li>
+          </ul>
+          <p class="stock-banner ok" id="pd-stock"></p>
+          <details class="rp-manual">
+            <summary>Hoặc nhập ngày bằng tay</summary>
+            <div class="pd-dates">
+              <div class="date-field">
+                <label for="pd-from">Ngày nhận</label>
+                <input id="pd-from" type="date">
+              </div>
+              <div class="date-field">
+                <label for="pd-to">Ngày trả</label>
+                <input id="pd-to" type="date">
+              </div>
+            </div>
+          </details>
+        </section>
 
         <div class="pd-row">
           <span class="opt-label" style="margin:0">Số lượng</span>
@@ -74,12 +102,13 @@
 
         <p class="form-error" id="pd-error" hidden></p>
         <div class="pd-summary" aria-live="polite">
-          <div><span>Giá thuê / ngày</span><strong id="sum-rent-day"></strong></div>
-          <div><span>Số ngày × số lượng</span><strong id="sum-days"></strong></div>
+          <div><span>Thời gian thuê</span><strong id="sum-days"></strong></div>
+          <div class="sum-breakdown" id="sum-breakdown"></div>
           <div><span>Tiền thuê (trả khi nhận đồ)</span><strong id="sum-rent"></strong></div>
-          <div><span>Cọc 30% (hoàn lại khi trả đồ)</span><strong id="sum-deposit"></strong></div>
-          <div class="muted"><span>Phí giao tận nơi (nếu chọn lúc thanh toán)</span><strong>+ 50.000 đ</strong></div>
+          <div><span>Cọc 30% (được hoàn khi trả hàng)</span><strong id="sum-deposit"></strong></div>
+          <div class="muted"><span>Phí giao tận nơi (nếu chọn lúc thanh toán)</span><strong>+ <span data-store="delivery-fee"></span></strong></div>
           <div class="total"><span>Cần trả hôm nay (cọc)</span><strong id="sum-today"></strong></div>
+          <p class="muted small"><a href="student.html">HSSV đã xác minh</a> được giảm thêm 10% tiền thuê lúc thanh toán.</p>
         </div>
 
         <div class="pd-cta">
@@ -88,9 +117,9 @@
         </div>
 
         <ul class="pd-perks">
-          <li><span data-icon="refresh"></span><a href="refund.html">Tự động hoàn cọc sau khi trả đồ</a></li>
+          <li><span data-icon="refresh"></span><a href="refund.html">Được hoàn cọc khi trả hàng, không giữ CCCD</a></li>
           <li><span data-icon="shield"></span><a href="care.html">Thiết bị được vệ sinh, kiểm tra trước mỗi lần giao</a></li>
-          <li><span data-icon="truck"></span><a href="contact.html">Nhận tại Thủ Đức hoặc giao tận nơi TP.HCM (+50.000đ)</a></li>
+          <li><span data-icon="truck"></span><a href="contact.html">Nhận tại Thủ Đức hoặc giao tận nơi TP.HCM (+<span data-store="delivery-fee"></span>)</a></li>
         </ul>
       </section>
     </div>
@@ -121,6 +150,7 @@
   <footer id="site-footer"></footer>
 
   <script src="assets/js/data.js"></script>
+  <script src="assets/js/content.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/product.js"></script>
 </body>
